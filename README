@@ -1,0 +1,48 @@
+In this assignment, you will implement a text analyzer using Hadoop, a programming model and software framework for
+developing applications that concurrently process large scale data on distributed systems. The analyzer you develop
+has to calculate the occurrences of a given set of words that appear together in the given text. The data set for this
+problem is the novel Pride and Prejudice. A collection of files(one per chapter) of all the text is provided in the
+attached zip file for the assignment.
+
+The appearance counts have to be counted per line. You do not need to separate sentences.
+Just use the lines (which are separated by the newline character in the given files) as the basis for
+computing the word frequencies.
+The implemented analyzer should run in pseudo-distributed mode. Here is an
+example:
+for the analyzer: Text: “Mr. Bingley was good-looking and gentlemanlike; he had a pleasant countenance, and easy,
+unaffected manners.”
+
+Analysis: In the sentence above, for the word Bingley, “and” appears twice, “gentlemanlike” appears once, and so on.
+For this problem, Bingley is a ‘contextword’, and “gentlemanlike”, and “and” are querywords. For the word and,
+“pleasant” appears once, “and” appears once (not zero times or twice), and so on.
+Your program should read the pair of words from a given input file that contains the words (one pair per line)
+in space separated format - the first word being the contextword, and the second the queryword. Follow the
+general programming assignment guidelines for all non-specified details. Your program should output the
+following format (and only this format) to
+standard ouput: <contextword><single-space><queryword><single-space><occurrence-frequency>.
+
+Ex. If we run the text analyzer on the full text of the novel. Then:
+Darcy occurs 112 times with Bingley.
+Here, Bingley is the contextword, and Darcy is the queryword.
+Elizabeth occurs 135 times with Jane. Here, Jane is the contextword, and Elizabeth is the queryword.
+
+Thus, for a sample input file:
+Bingley Darcy
+Jane Elizabeth
+
+The output should be:
+Bingley Darcy 112
+Jane Elizabeth 135
+
+Additional input files and their corresponding outputs would be provided to you for validating your program.
+For simplifying this assignment and obtaining the correct results, you should (1) mask non-alphabetic characters
+by white-space; ie. any character other than a-z should be replaced by a single-space character.
+
+(2) convert every alphabetic character into lower-case.
+Before you start working on this assignment, it is suggested that to read the Quickstart guide
+and the Tutorial on Hadoop webpage. The sample code in the tutorial would be helpful for this assignment.
+
+Links:
+Hadoop – http://hadoop.apache.org/
+Documentation – http://hadoop.apache.org/docs/current/
+MapReduce paper – http://research.google.com/archive/mapreduce.html

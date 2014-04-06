@@ -2501,3 +2501,1809 @@ org.apache.hadoop.util.Shell$ExitCodeException: id: dr.who: no such user
 /************************************************************
 SHUTDOWN_MSG: Shutting down NameNode at Prateeks-MacBook-Pro.local/192.168.1.3
 ************************************************************/
+2014-04-06 17:06:24,476 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting NameNode
+STARTUP_MSG:   host = Prateeks-MacBook-Pro.local/192.168.1.3
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 2.2.0
+STARTUP_MSG:   classpath = /Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/etc/hadoop:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/common/lib/activation-1.1.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/common/lib/asm-3.2.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/common/lib/avro-1.7.4.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/common/lib/commons-beanutils-1.7.0.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/common/lib/commons-beanutils-core-1.8.0.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/common/lib/commons-cli-1.2.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/common/lib/commons-codec-1.4.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/common/lib/commons-collections-3.2.1.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/common/lib/commons-compress-1.4.1.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/common/lib/commons-configuration-1.6.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/common/lib/commons-digester-1.8.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/common/lib/commons-el-1.0.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/common/lib/commons-httpclient-3.1.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/common/lib/commons-io-2.1.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/common/lib/commons-lang-2.5.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/common/lib/commons-logging-1.1.1.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/common/lib/commons-math-2.1.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/common/lib/commons-net-3.1.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/common/lib/guava-11.0.2.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/common/lib/hadoop-annotations-2.2.0.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/common/lib/hadoop-auth-2.2.0.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/common/lib/jackson-core-asl-1.8.8.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/common/lib/jackson-jaxrs-1.8.8.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/common/lib/jackson-mapper-asl-1.8.8.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/common/lib/jackson-xc-1.8.8.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/common/lib/jasper-compiler-5.5.23.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/common/lib/jasper-runtime-5.5.23.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/common/lib/jaxb-api-2.2.2.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/common/lib/jaxb-impl-2.2.3-1.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/common/lib/jersey-core-1.9.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/common/lib/jersey-json-1.9.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/common/lib/jersey-server-1.9.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/common/lib/jets3t-0.6.1.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/common/lib/jettison-1.1.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/common/lib/jetty-6.1.26.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/common/lib/jetty-util-6.1.26.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/common/lib/jsch-0.1.42.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/common/lib/jsp-api-2.1.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/common/lib/jsr305-1.3.9.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/common/lib/junit-4.8.2.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/common/lib/log4j-1.2.17.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/common/lib/mockito-all-1.8.5.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/common/lib/netty-3.6.2.Final.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/common/lib/paranamer-2.3.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/common/lib/protobuf-java-2.5.0.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/common/lib/servlet-api-2.5.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/common/lib/slf4j-api-1.7.5.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/common/lib/slf4j-log4j12-1.7.5.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/common/lib/snappy-java-1.0.4.1.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/common/lib/stax-api-1.0.1.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/common/lib/xmlenc-0.52.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/common/lib/xz-1.0.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/common/lib/zookeeper-3.4.5.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/common/hadoop-common-2.2.0-tests.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/common/hadoop-common-2.2.0.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/common/hadoop-nfs-2.2.0.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/hdfs:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/hdfs/lib/asm-3.2.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/hdfs/lib/commons-cli-1.2.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/hdfs/lib/commons-codec-1.4.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/hdfs/lib/commons-daemon-1.0.13.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/hdfs/lib/commons-el-1.0.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/hdfs/lib/commons-io-2.1.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/hdfs/lib/commons-lang-2.5.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/hdfs/lib/commons-logging-1.1.1.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/hdfs/lib/guava-11.0.2.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/hdfs/lib/jackson-core-asl-1.8.8.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/hdfs/lib/jackson-mapper-asl-1.8.8.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/hdfs/lib/jasper-runtime-5.5.23.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/hdfs/lib/jersey-core-1.9.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/hdfs/lib/jersey-server-1.9.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/hdfs/lib/jetty-6.1.26.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/hdfs/lib/jetty-util-6.1.26.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/hdfs/lib/jsp-api-2.1.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/hdfs/lib/jsr305-1.3.9.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/hdfs/lib/log4j-1.2.17.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/hdfs/lib/netty-3.6.2.Final.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/hdfs/lib/protobuf-java-2.5.0.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/hdfs/lib/servlet-api-2.5.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/hdfs/lib/xmlenc-0.52.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/hdfs/hadoop-hdfs-2.2.0-tests.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/hdfs/hadoop-hdfs-2.2.0.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/hdfs/hadoop-hdfs-nfs-2.2.0.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/yarn/lib/aopalliance-1.0.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/yarn/lib/asm-3.2.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/yarn/lib/avro-1.7.4.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/yarn/lib/commons-compress-1.4.1.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/yarn/lib/commons-io-2.1.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/yarn/lib/guice-3.0.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/yarn/lib/guice-servlet-3.0.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/yarn/lib/hadoop-annotations-2.2.0.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/yarn/lib/hamcrest-core-1.1.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/yarn/lib/jackson-core-asl-1.8.8.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/yarn/lib/jackson-mapper-asl-1.8.8.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/yarn/lib/javax.inject-1.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/yarn/lib/jersey-core-1.9.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/yarn/lib/jersey-guice-1.9.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/yarn/lib/jersey-server-1.9.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/yarn/lib/junit-4.10.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/yarn/lib/log4j-1.2.17.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/yarn/lib/netty-3.6.2.Final.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/yarn/lib/paranamer-2.3.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/yarn/lib/protobuf-java-2.5.0.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/yarn/lib/snappy-java-1.0.4.1.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/yarn/lib/xz-1.0.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/yarn/hadoop-yarn-api-2.2.0.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/yarn/hadoop-yarn-applications-distributedshell-2.2.0.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/yarn/hadoop-yarn-applications-unmanaged-am-launcher-2.2.0.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/yarn/hadoop-yarn-client-2.2.0.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/yarn/hadoop-yarn-common-2.2.0.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/yarn/hadoop-yarn-server-common-2.2.0.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/yarn/hadoop-yarn-server-nodemanager-2.2.0.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/yarn/hadoop-yarn-server-resourcemanager-2.2.0.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/yarn/hadoop-yarn-server-tests-2.2.0.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/yarn/hadoop-yarn-server-web-proxy-2.2.0.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/yarn/hadoop-yarn-site-2.2.0.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/mapreduce/lib/aopalliance-1.0.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/mapreduce/lib/asm-3.2.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/mapreduce/lib/avro-1.7.4.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/mapreduce/lib/commons-compress-1.4.1.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/mapreduce/lib/commons-io-2.1.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/mapreduce/lib/guice-3.0.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/mapreduce/lib/guice-servlet-3.0.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/mapreduce/lib/hadoop-annotations-2.2.0.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/mapreduce/lib/hamcrest-core-1.1.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/mapreduce/lib/jackson-core-asl-1.8.8.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/mapreduce/lib/jackson-mapper-asl-1.8.8.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/mapreduce/lib/javax.inject-1.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/mapreduce/lib/jersey-core-1.9.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/mapreduce/lib/jersey-guice-1.9.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/mapreduce/lib/jersey-server-1.9.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/mapreduce/lib/junit-4.10.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/mapreduce/lib/log4j-1.2.17.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/mapreduce/lib/netty-3.6.2.Final.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/mapreduce/lib/paranamer-2.3.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/mapreduce/lib/protobuf-java-2.5.0.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/mapreduce/lib/snappy-java-1.0.4.1.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/mapreduce/lib/xz-1.0.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/mapreduce/hadoop-mapreduce-client-app-2.2.0.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/mapreduce/hadoop-mapreduce-client-common-2.2.0.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/mapreduce/hadoop-mapreduce-client-core-2.2.0.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/mapreduce/hadoop-mapreduce-client-hs-2.2.0.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/mapreduce/hadoop-mapreduce-client-hs-plugins-2.2.0.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/mapreduce/hadoop-mapreduce-client-jobclient-2.2.0-tests.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/mapreduce/hadoop-mapreduce-client-jobclient-2.2.0.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/mapreduce/hadoop-mapreduce-client-shuffle-2.2.0.jar:/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/share/hadoop/mapreduce/hadoop-mapreduce-examples-2.2.0.jar:/contrib/capacity-scheduler/*.jar:/contrib/capacity-scheduler/*.jar:/contrib/capacity-scheduler/*.jar
+STARTUP_MSG:   build = https://svn.apache.org/repos/asf/hadoop/common -r 1529768; compiled by 'hortonmu' on 2013-10-07T06:28Z
+STARTUP_MSG:   java = 1.6.0_65
+************************************************************/
+2014-04-06 17:06:24,491 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: registered UNIX signal handlers for [TERM, HUP, INT]
+2014-04-06 17:06:24,829 INFO org.apache.hadoop.metrics2.impl.MetricsConfig: loaded properties from hadoop-metrics2.properties
+2014-04-06 17:06:25,199 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Scheduled snapshot period at 10 second(s).
+2014-04-06 17:06:25,199 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: NameNode metrics system started
+2014-04-06 17:06:25,363 WARN org.apache.hadoop.util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2014-04-06 17:06:25,568 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2014-04-06 17:06:25,625 INFO org.apache.hadoop.http.HttpServer: Added global filter 'safety' (class=org.apache.hadoop.http.HttpServer$QuotingInputFilter)
+2014-04-06 17:06:25,627 INFO org.apache.hadoop.http.HttpServer: Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context hdfs
+2014-04-06 17:06:25,628 INFO org.apache.hadoop.http.HttpServer: Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context static
+2014-04-06 17:06:25,628 INFO org.apache.hadoop.http.HttpServer: Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context logs
+2014-04-06 17:06:25,650 INFO org.apache.hadoop.http.HttpServer: dfs.webhdfs.enabled = false
+2014-04-06 17:06:25,682 INFO org.apache.hadoop.http.HttpServer: Jetty bound to port 50070
+2014-04-06 17:06:25,682 INFO org.mortbay.log: jetty-6.1.26
+2014-04-06 17:06:25,964 INFO org.mortbay.log: Started SelectChannelConnector@0.0.0.0:50070
+2014-04-06 17:06:25,964 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: Web-server up at: 0.0.0.0:50070
+2014-04-06 17:06:26,022 WARN org.apache.hadoop.hdfs.server.common.Util: Path /Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/hdfs/name should be specified as a URI in configuration files. Please update hdfs configuration.
+2014-04-06 17:06:26,022 WARN org.apache.hadoop.hdfs.server.common.Util: Path /Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/hdfs/name should be specified as a URI in configuration files. Please update hdfs configuration.
+2014-04-06 17:06:26,023 WARN org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Only one image storage directory (dfs.namenode.name.dir) configured. Beware of dataloss due to lack of redundant storage directories!
+2014-04-06 17:06:26,023 WARN org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Only one namespace edits storage directory (dfs.namenode.edits.dir) configured. Beware of dataloss due to lack of redundant storage directories!
+2014-04-06 17:06:26,089 WARN org.apache.hadoop.hdfs.server.common.Util: Path /Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/hdfs/name should be specified as a URI in configuration files. Please update hdfs configuration.
+2014-04-06 17:06:26,090 WARN org.apache.hadoop.hdfs.server.common.Util: Path /Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/hdfs/name should be specified as a URI in configuration files. Please update hdfs configuration.
+2014-04-06 17:06:26,204 INFO org.apache.hadoop.hdfs.server.namenode.HostFileManager: read includes:
+HostSet(
+)
+2014-04-06 17:06:26,205 INFO org.apache.hadoop.hdfs.server.namenode.HostFileManager: read excludes:
+HostSet(
+)
+2014-04-06 17:06:26,207 INFO org.apache.hadoop.hdfs.server.blockmanagement.DatanodeManager: dfs.block.invalidate.limit=1000
+2014-04-06 17:06:26,210 INFO org.apache.hadoop.util.GSet: Computing capacity for map BlocksMap
+2014-04-06 17:06:26,210 INFO org.apache.hadoop.util.GSet: VM type       = 64-bit
+2014-04-06 17:06:26,214 INFO org.apache.hadoop.util.GSet: 2.0% max memory = 987.5 MB
+2014-04-06 17:06:26,214 INFO org.apache.hadoop.util.GSet: capacity      = 2^21 = 2097152 entries
+2014-04-06 17:06:26,221 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: dfs.block.access.token.enable=false
+2014-04-06 17:06:26,222 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: defaultReplication         = 3
+2014-04-06 17:06:26,222 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: maxReplication             = 512
+2014-04-06 17:06:26,222 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: minReplication             = 1
+2014-04-06 17:06:26,222 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: maxReplicationStreams      = 2
+2014-04-06 17:06:26,222 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: shouldCheckForEnoughRacks  = false
+2014-04-06 17:06:26,222 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: replicationRecheckInterval = 3000
+2014-04-06 17:06:26,222 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: encryptDataTransfer        = false
+2014-04-06 17:06:26,229 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: fsOwner             = prateek (auth:SIMPLE)
+2014-04-06 17:06:26,229 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: supergroup          = supergroup
+2014-04-06 17:06:26,229 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: isPermissionEnabled = true
+2014-04-06 17:06:26,229 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: HA Enabled: false
+2014-04-06 17:06:26,230 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Append Enabled: true
+2014-04-06 17:06:26,378 INFO org.apache.hadoop.util.GSet: Computing capacity for map INodeMap
+2014-04-06 17:06:26,379 INFO org.apache.hadoop.util.GSet: VM type       = 64-bit
+2014-04-06 17:06:26,379 INFO org.apache.hadoop.util.GSet: 1.0% max memory = 987.5 MB
+2014-04-06 17:06:26,379 INFO org.apache.hadoop.util.GSet: capacity      = 2^20 = 1048576 entries
+2014-04-06 17:06:26,399 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: Caching file names occuring more than 10 times
+2014-04-06 17:06:26,403 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: dfs.namenode.safemode.threshold-pct = 0.9990000128746033
+2014-04-06 17:06:26,403 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: dfs.namenode.safemode.min.datanodes = 0
+2014-04-06 17:06:26,403 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: dfs.namenode.safemode.extension     = 30000
+2014-04-06 17:06:26,404 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Retry cache on namenode is enabled
+2014-04-06 17:06:26,404 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Retry cache will use 0.03 of total heap and retry cache entry expiry time is 600000 millis
+2014-04-06 17:06:26,407 INFO org.apache.hadoop.util.GSet: Computing capacity for map Namenode Retry Cache
+2014-04-06 17:06:26,407 INFO org.apache.hadoop.util.GSet: VM type       = 64-bit
+2014-04-06 17:06:26,407 INFO org.apache.hadoop.util.GSet: 0.029999999329447746% max memory = 987.5 MB
+2014-04-06 17:06:26,407 INFO org.apache.hadoop.util.GSet: capacity      = 2^15 = 32768 entries
+2014-04-06 17:06:26,422 INFO org.apache.hadoop.hdfs.server.common.Storage: Lock on /Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/hdfs/name/in_use.lock acquired by nodename 29425@Prateeks-MacBook-Pro.local
+2014-04-06 17:06:26,485 INFO org.apache.hadoop.hdfs.server.namenode.FileJournalManager: Recovering unfinalized segments in /Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/hdfs/name/current
+2014-04-06 17:06:26,548 INFO org.apache.hadoop.hdfs.server.namenode.FileJournalManager: Finalizing edits file /Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/hdfs/name/current/edits_inprogress_0000000000000000070 -> /Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/hdfs/name/current/edits_0000000000000000070-0000000000000000070
+2014-04-06 17:06:26,567 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Loading image file /Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/hdfs/name/current/fsimage_0000000000000000069 using no compression
+2014-04-06 17:06:26,567 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Number of files = 15
+2014-04-06 17:06:26,576 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Number of files under construction = 0
+2014-04-06 17:06:26,577 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Image file /Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/hdfs/name/current/fsimage_0000000000000000069 of size 1624 bytes loaded in 0 seconds.
+2014-04-06 17:06:26,577 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Loaded image for txid 69 from /Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/hdfs/name/current/fsimage_0000000000000000069
+2014-04-06 17:06:26,577 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Reading org.apache.hadoop.hdfs.server.namenode.RedundantEditLogInputStream@64bbf7aa expecting start txid #70
+2014-04-06 17:06:26,577 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Start loading edits file /Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/hdfs/name/current/edits_0000000000000000070-0000000000000000070
+2014-04-06 17:06:26,578 INFO org.apache.hadoop.hdfs.server.namenode.EditLogInputStream: Fast-forwarding stream '/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/hdfs/name/current/edits_0000000000000000070-0000000000000000070' to transaction ID 70
+2014-04-06 17:06:26,580 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Edits file /Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/hdfs/name/current/edits_0000000000000000070-0000000000000000070 of size 1048576 edits # 1 loaded in 0 seconds
+2014-04-06 17:06:26,586 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Saving image file /Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/hdfs/name/current/fsimage.ckpt_0000000000000000070 using no compression
+2014-04-06 17:06:26,594 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Image file /Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/hdfs/name/current/fsimage.ckpt_0000000000000000070 of size 1624 bytes saved in 0 seconds.
+2014-04-06 17:06:26,621 INFO org.apache.hadoop.hdfs.server.namenode.NNStorageRetentionManager: Going to retain 2 images with txid >= 69
+2014-04-06 17:06:26,621 INFO org.apache.hadoop.hdfs.server.namenode.NNStorageRetentionManager: Purging old image FSImageFile(file=/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/hdfs/name/current/fsimage_0000000000000000067, cpktTxId=0000000000000000067)
+2014-04-06 17:06:26,660 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Starting log segment at 71
+2014-04-06 17:06:26,701 INFO org.apache.hadoop.hdfs.server.namenode.NameCache: initialized with 0 entries 0 lookups
+2014-04-06 17:06:26,701 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Finished loading FSImage in 293 msecs
+2014-04-06 17:06:27,035 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: RPC server is binding to localhost:9000
+2014-04-06 17:06:27,057 INFO org.apache.hadoop.ipc.Server: Starting Socket Reader #1 for port 9000
+2014-04-06 17:06:27,114 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Registered FSNamesystemState MBean
+2014-04-06 17:06:27,115 WARN org.apache.hadoop.hdfs.server.common.Util: Path /Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/hdfs/name should be specified as a URI in configuration files. Please update hdfs configuration.
+2014-04-06 17:06:27,140 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Number of blocks under construction: 0
+2014-04-06 17:06:27,140 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Number of blocks under construction: 0
+2014-04-06 17:06:27,140 INFO org.apache.hadoop.hdfs.StateChange: STATE* Safe mode ON. 
+The reported blocks 0 needs additional 4 blocks to reach the threshold 0.9990 of total blocks 4.
+Safe mode will be turned off automatically
+2014-04-06 17:06:27,166 INFO org.apache.hadoop.ipc.Server: IPC Server Responder: starting
+2014-04-06 17:06:27,166 INFO org.apache.hadoop.ipc.Server: IPC Server listener on 9000: starting
+2014-04-06 17:06:27,168 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: NameNode RPC up at: localhost/127.0.0.1:9000
+2014-04-06 17:06:27,168 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Starting services required for active state
+2014-04-06 17:06:50,826 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* registerDatanode: from DatanodeRegistration(127.0.0.1, storageID=DS-253677822-192.168.1.3-50010-1396137838001, infoPort=50075, ipcPort=50020, storageInfo=lv=-47;cid=CID-dff0cbae-ad32-43e7-8802-22dc664a3720;nsid=1171046181;c=0) storage DS-253677822-192.168.1.3-50010-1396137838001
+2014-04-06 17:06:50,830 INFO org.apache.hadoop.net.NetworkTopology: Adding a new node: /default-rack/127.0.0.1:50010
+2014-04-06 17:06:50,831 INFO org.apache.hadoop.hdfs.StateChange: STATE* Safe mode ON. 
+The reported blocks 0 needs additional 4 blocks to reach the threshold 0.9990 of total blocks 4.
+Safe mode will be turned off automatically
+2014-04-06 17:06:50,939 INFO org.apache.hadoop.hdfs.StateChange: STATE* Safe mode extension entered. 
+The reported blocks 3 has reached the threshold 0.9990 of total blocks 4. The number of live datanodes 1 has reached the minimum number 0. Safe mode will be turned off automatically in 29 seconds.
+2014-04-06 17:06:50,939 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: initializing replication queues
+2014-04-06 17:06:50,946 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: Total number of blocks            = 4
+2014-04-06 17:06:50,946 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: Number of invalid blocks          = 0
+2014-04-06 17:06:50,946 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: Number of under-replicated blocks = 4
+2014-04-06 17:06:50,946 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: Number of  over-replicated blocks = 0
+2014-04-06 17:06:50,946 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: Number of blocks being written    = 0
+2014-04-06 17:06:50,946 INFO org.apache.hadoop.hdfs.StateChange: STATE* Replication Queue initialization scan for invalid, over- and under-replicated blocks completed in 7 msec
+2014-04-06 17:06:50,946 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: BLOCK* processReport: Received first block report from 127.0.0.1:50010 after starting up or becoming active. Its block contents are no longer considered stale
+2014-04-06 17:06:50,947 INFO BlockStateChange: BLOCK* processReport: from DatanodeRegistration(127.0.0.1, storageID=DS-253677822-192.168.1.3-50010-1396137838001, infoPort=50075, ipcPort=50020, storageInfo=lv=-47;cid=CID-dff0cbae-ad32-43e7-8802-22dc664a3720;nsid=1171046181;c=0), blocks: 4, processing time: 11 msecs
+2014-04-06 17:07:10,960 INFO org.apache.hadoop.hdfs.StateChange: STATE* Safe mode ON. 
+The reported blocks 4 has reached the threshold 0.9990 of total blocks 4. The number of live datanodes 1 has reached the minimum number 0. Safe mode will be turned off automatically in 9 seconds.
+2014-04-06 17:07:20,968 INFO org.apache.hadoop.hdfs.StateChange: STATE* Leaving safe mode after 54 secs
+2014-04-06 17:07:20,968 INFO org.apache.hadoop.hdfs.StateChange: STATE* Safe mode is OFF
+2014-04-06 17:07:20,968 INFO org.apache.hadoop.hdfs.StateChange: STATE* Network topology has 1 racks and 1 datanodes
+2014-04-06 17:07:20,968 INFO org.apache.hadoop.hdfs.StateChange: STATE* UnderReplicatedBlocks has 4 blocks
+2014-04-06 17:07:22,109 INFO logs: Aliases are enabled
+2014-04-06 17:07:46,172 WARN org.apache.hadoop.hdfs.server.namenode.FSNamesystem: trying to get DT with no secret manager running
+2014-04-06 17:07:46,935 WARN org.apache.hadoop.security.ShellBasedUnixGroupsMapping: got exception trying to get groups for user dr.who
+org.apache.hadoop.util.Shell$ExitCodeException: id: dr.who: no such user
+
+	at org.apache.hadoop.util.Shell.runCommand(Shell.java:464)
+	at org.apache.hadoop.util.Shell.run(Shell.java:379)
+	at org.apache.hadoop.util.Shell$ShellCommandExecutor.execute(Shell.java:589)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:678)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:661)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getUnixGroups(ShellBasedUnixGroupsMapping.java:83)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getGroups(ShellBasedUnixGroupsMapping.java:52)
+	at org.apache.hadoop.security.JniBasedUnixGroupsMappingWithFallback.getGroups(JniBasedUnixGroupsMappingWithFallback.java:50)
+	at org.apache.hadoop.security.Groups.getGroups(Groups.java:89)
+	at org.apache.hadoop.security.UserGroupInformation.getGroupNames(UserGroupInformation.java:1352)
+	at org.apache.hadoop.hdfs.server.namenode.FSPermissionChecker.<init>(FSPermissionChecker.java:63)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getPermissionChecker(FSNamesystem.java:3099)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getFileInfo(FSNamesystem.java:3274)
+	at org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.getFileInfo(NameNodeRpcServer.java:749)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolServerSideTranslatorPB.getFileInfo(ClientNamenodeProtocolServerSideTranslatorPB.java:692)
+	at org.apache.hadoop.hdfs.protocol.proto.ClientNamenodeProtocolProtos$ClientNamenodeProtocol$2.callBlockingMethod(ClientNamenodeProtocolProtos.java:59628)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:585)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:928)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2048)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2044)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:394)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1491)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2042)
+2014-04-06 17:07:46,937 WARN org.apache.hadoop.security.UserGroupInformation: No groups available for user dr.who
+2014-04-06 17:07:46,984 WARN org.apache.hadoop.security.ShellBasedUnixGroupsMapping: got exception trying to get groups for user dr.who
+org.apache.hadoop.util.Shell$ExitCodeException: id: dr.who: no such user
+
+	at org.apache.hadoop.util.Shell.runCommand(Shell.java:464)
+	at org.apache.hadoop.util.Shell.run(Shell.java:379)
+	at org.apache.hadoop.util.Shell$ShellCommandExecutor.execute(Shell.java:589)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:678)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:661)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getUnixGroups(ShellBasedUnixGroupsMapping.java:83)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getGroups(ShellBasedUnixGroupsMapping.java:52)
+	at org.apache.hadoop.security.JniBasedUnixGroupsMappingWithFallback.getGroups(JniBasedUnixGroupsMappingWithFallback.java:50)
+	at org.apache.hadoop.security.Groups.getGroups(Groups.java:89)
+	at org.apache.hadoop.security.UserGroupInformation.getGroupNames(UserGroupInformation.java:1352)
+	at org.apache.hadoop.hdfs.server.namenode.FSPermissionChecker.<init>(FSPermissionChecker.java:63)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getPermissionChecker(FSNamesystem.java:3099)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getListingInt(FSNamesystem.java:3875)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getListing(FSNamesystem.java:3864)
+	at org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.getListing(NameNodeRpcServer.java:737)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolServerSideTranslatorPB.getListing(ClientNamenodeProtocolServerSideTranslatorPB.java:514)
+	at org.apache.hadoop.hdfs.protocol.proto.ClientNamenodeProtocolProtos$ClientNamenodeProtocol$2.callBlockingMethod(ClientNamenodeProtocolProtos.java:59600)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:585)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:928)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2048)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2044)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:394)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1491)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2042)
+2014-04-06 17:07:46,985 WARN org.apache.hadoop.security.UserGroupInformation: No groups available for user dr.who
+2014-04-06 17:07:50,517 WARN org.apache.hadoop.security.ShellBasedUnixGroupsMapping: got exception trying to get groups for user dr.who
+org.apache.hadoop.util.Shell$ExitCodeException: id: dr.who: no such user
+
+	at org.apache.hadoop.util.Shell.runCommand(Shell.java:464)
+	at org.apache.hadoop.util.Shell.run(Shell.java:379)
+	at org.apache.hadoop.util.Shell$ShellCommandExecutor.execute(Shell.java:589)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:678)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:661)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getUnixGroups(ShellBasedUnixGroupsMapping.java:83)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getGroups(ShellBasedUnixGroupsMapping.java:52)
+	at org.apache.hadoop.security.JniBasedUnixGroupsMappingWithFallback.getGroups(JniBasedUnixGroupsMappingWithFallback.java:50)
+	at org.apache.hadoop.security.Groups.getGroups(Groups.java:89)
+	at org.apache.hadoop.security.UserGroupInformation.getGroupNames(UserGroupInformation.java:1352)
+	at org.apache.hadoop.hdfs.server.namenode.FSPermissionChecker.<init>(FSPermissionChecker.java:63)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getPermissionChecker(FSNamesystem.java:3099)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getFileInfo(FSNamesystem.java:3274)
+	at org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.getFileInfo(NameNodeRpcServer.java:749)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolServerSideTranslatorPB.getFileInfo(ClientNamenodeProtocolServerSideTranslatorPB.java:692)
+	at org.apache.hadoop.hdfs.protocol.proto.ClientNamenodeProtocolProtos$ClientNamenodeProtocol$2.callBlockingMethod(ClientNamenodeProtocolProtos.java:59628)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:585)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:928)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2048)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2044)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:394)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1491)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2042)
+2014-04-06 17:07:50,518 WARN org.apache.hadoop.security.UserGroupInformation: No groups available for user dr.who
+2014-04-06 17:07:50,545 WARN org.apache.hadoop.security.ShellBasedUnixGroupsMapping: got exception trying to get groups for user dr.who
+org.apache.hadoop.util.Shell$ExitCodeException: id: dr.who: no such user
+
+	at org.apache.hadoop.util.Shell.runCommand(Shell.java:464)
+	at org.apache.hadoop.util.Shell.run(Shell.java:379)
+	at org.apache.hadoop.util.Shell$ShellCommandExecutor.execute(Shell.java:589)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:678)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:661)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getUnixGroups(ShellBasedUnixGroupsMapping.java:83)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getGroups(ShellBasedUnixGroupsMapping.java:52)
+	at org.apache.hadoop.security.JniBasedUnixGroupsMappingWithFallback.getGroups(JniBasedUnixGroupsMappingWithFallback.java:50)
+	at org.apache.hadoop.security.Groups.getGroups(Groups.java:89)
+	at org.apache.hadoop.security.UserGroupInformation.getGroupNames(UserGroupInformation.java:1352)
+	at org.apache.hadoop.hdfs.server.namenode.FSPermissionChecker.<init>(FSPermissionChecker.java:63)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getPermissionChecker(FSNamesystem.java:3099)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getListingInt(FSNamesystem.java:3875)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getListing(FSNamesystem.java:3864)
+	at org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.getListing(NameNodeRpcServer.java:737)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolServerSideTranslatorPB.getListing(ClientNamenodeProtocolServerSideTranslatorPB.java:514)
+	at org.apache.hadoop.hdfs.protocol.proto.ClientNamenodeProtocolProtos$ClientNamenodeProtocol$2.callBlockingMethod(ClientNamenodeProtocolProtos.java:59600)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:585)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:928)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2048)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2044)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:394)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1491)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2042)
+2014-04-06 17:07:50,546 WARN org.apache.hadoop.security.UserGroupInformation: No groups available for user dr.who
+2014-04-06 17:07:51,807 WARN org.apache.hadoop.security.ShellBasedUnixGroupsMapping: got exception trying to get groups for user dr.who
+org.apache.hadoop.util.Shell$ExitCodeException: id: dr.who: no such user
+
+	at org.apache.hadoop.util.Shell.runCommand(Shell.java:464)
+	at org.apache.hadoop.util.Shell.run(Shell.java:379)
+	at org.apache.hadoop.util.Shell$ShellCommandExecutor.execute(Shell.java:589)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:678)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:661)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getUnixGroups(ShellBasedUnixGroupsMapping.java:83)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getGroups(ShellBasedUnixGroupsMapping.java:52)
+	at org.apache.hadoop.security.JniBasedUnixGroupsMappingWithFallback.getGroups(JniBasedUnixGroupsMappingWithFallback.java:50)
+	at org.apache.hadoop.security.Groups.getGroups(Groups.java:89)
+	at org.apache.hadoop.security.UserGroupInformation.getGroupNames(UserGroupInformation.java:1352)
+	at org.apache.hadoop.hdfs.server.namenode.FSPermissionChecker.<init>(FSPermissionChecker.java:63)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getPermissionChecker(FSNamesystem.java:3099)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getFileInfo(FSNamesystem.java:3274)
+	at org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.getFileInfo(NameNodeRpcServer.java:749)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolServerSideTranslatorPB.getFileInfo(ClientNamenodeProtocolServerSideTranslatorPB.java:692)
+	at org.apache.hadoop.hdfs.protocol.proto.ClientNamenodeProtocolProtos$ClientNamenodeProtocol$2.callBlockingMethod(ClientNamenodeProtocolProtos.java:59628)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:585)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:928)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2048)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2044)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:394)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1491)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2042)
+2014-04-06 17:07:51,808 WARN org.apache.hadoop.security.UserGroupInformation: No groups available for user dr.who
+2014-04-06 17:07:51,829 WARN org.apache.hadoop.security.ShellBasedUnixGroupsMapping: got exception trying to get groups for user dr.who
+org.apache.hadoop.util.Shell$ExitCodeException: id: dr.who: no such user
+
+	at org.apache.hadoop.util.Shell.runCommand(Shell.java:464)
+	at org.apache.hadoop.util.Shell.run(Shell.java:379)
+	at org.apache.hadoop.util.Shell$ShellCommandExecutor.execute(Shell.java:589)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:678)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:661)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getUnixGroups(ShellBasedUnixGroupsMapping.java:83)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getGroups(ShellBasedUnixGroupsMapping.java:52)
+	at org.apache.hadoop.security.JniBasedUnixGroupsMappingWithFallback.getGroups(JniBasedUnixGroupsMappingWithFallback.java:50)
+	at org.apache.hadoop.security.Groups.getGroups(Groups.java:89)
+	at org.apache.hadoop.security.UserGroupInformation.getGroupNames(UserGroupInformation.java:1352)
+	at org.apache.hadoop.hdfs.server.namenode.FSPermissionChecker.<init>(FSPermissionChecker.java:63)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getPermissionChecker(FSNamesystem.java:3099)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getListingInt(FSNamesystem.java:3875)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getListing(FSNamesystem.java:3864)
+	at org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.getListing(NameNodeRpcServer.java:737)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolServerSideTranslatorPB.getListing(ClientNamenodeProtocolServerSideTranslatorPB.java:514)
+	at org.apache.hadoop.hdfs.protocol.proto.ClientNamenodeProtocolProtos$ClientNamenodeProtocol$2.callBlockingMethod(ClientNamenodeProtocolProtos.java:59600)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:585)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:928)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2048)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2044)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:394)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1491)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2042)
+2014-04-06 17:07:51,830 WARN org.apache.hadoop.security.UserGroupInformation: No groups available for user dr.who
+2014-04-06 17:07:52,895 WARN org.apache.hadoop.security.ShellBasedUnixGroupsMapping: got exception trying to get groups for user dr.who
+org.apache.hadoop.util.Shell$ExitCodeException: id: dr.who: no such user
+
+	at org.apache.hadoop.util.Shell.runCommand(Shell.java:464)
+	at org.apache.hadoop.util.Shell.run(Shell.java:379)
+	at org.apache.hadoop.util.Shell$ShellCommandExecutor.execute(Shell.java:589)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:678)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:661)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getUnixGroups(ShellBasedUnixGroupsMapping.java:83)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getGroups(ShellBasedUnixGroupsMapping.java:52)
+	at org.apache.hadoop.security.JniBasedUnixGroupsMappingWithFallback.getGroups(JniBasedUnixGroupsMappingWithFallback.java:50)
+	at org.apache.hadoop.security.Groups.getGroups(Groups.java:89)
+	at org.apache.hadoop.security.UserGroupInformation.getGroupNames(UserGroupInformation.java:1352)
+	at org.apache.hadoop.hdfs.server.namenode.FSPermissionChecker.<init>(FSPermissionChecker.java:63)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getPermissionChecker(FSNamesystem.java:3099)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getFileInfo(FSNamesystem.java:3274)
+	at org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.getFileInfo(NameNodeRpcServer.java:749)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolServerSideTranslatorPB.getFileInfo(ClientNamenodeProtocolServerSideTranslatorPB.java:692)
+	at org.apache.hadoop.hdfs.protocol.proto.ClientNamenodeProtocolProtos$ClientNamenodeProtocol$2.callBlockingMethod(ClientNamenodeProtocolProtos.java:59628)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:585)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:928)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2048)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2044)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:394)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1491)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2042)
+2014-04-06 17:07:52,895 WARN org.apache.hadoop.security.UserGroupInformation: No groups available for user dr.who
+2014-04-06 17:07:52,917 WARN org.apache.hadoop.security.ShellBasedUnixGroupsMapping: got exception trying to get groups for user dr.who
+org.apache.hadoop.util.Shell$ExitCodeException: id: dr.who: no such user
+
+	at org.apache.hadoop.util.Shell.runCommand(Shell.java:464)
+	at org.apache.hadoop.util.Shell.run(Shell.java:379)
+	at org.apache.hadoop.util.Shell$ShellCommandExecutor.execute(Shell.java:589)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:678)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:661)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getUnixGroups(ShellBasedUnixGroupsMapping.java:83)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getGroups(ShellBasedUnixGroupsMapping.java:52)
+	at org.apache.hadoop.security.JniBasedUnixGroupsMappingWithFallback.getGroups(JniBasedUnixGroupsMappingWithFallback.java:50)
+	at org.apache.hadoop.security.Groups.getGroups(Groups.java:89)
+	at org.apache.hadoop.security.UserGroupInformation.getGroupNames(UserGroupInformation.java:1352)
+	at org.apache.hadoop.hdfs.server.namenode.FSPermissionChecker.<init>(FSPermissionChecker.java:63)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getPermissionChecker(FSNamesystem.java:3099)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getListingInt(FSNamesystem.java:3875)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getListing(FSNamesystem.java:3864)
+	at org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.getListing(NameNodeRpcServer.java:737)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolServerSideTranslatorPB.getListing(ClientNamenodeProtocolServerSideTranslatorPB.java:514)
+	at org.apache.hadoop.hdfs.protocol.proto.ClientNamenodeProtocolProtos$ClientNamenodeProtocol$2.callBlockingMethod(ClientNamenodeProtocolProtos.java:59600)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:585)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:928)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2048)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2044)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:394)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1491)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2042)
+2014-04-06 17:07:52,917 WARN org.apache.hadoop.security.UserGroupInformation: No groups available for user dr.who
+2014-04-06 17:07:53,938 WARN org.apache.hadoop.security.ShellBasedUnixGroupsMapping: got exception trying to get groups for user dr.who
+org.apache.hadoop.util.Shell$ExitCodeException: id: dr.who: no such user
+
+	at org.apache.hadoop.util.Shell.runCommand(Shell.java:464)
+	at org.apache.hadoop.util.Shell.run(Shell.java:379)
+	at org.apache.hadoop.util.Shell$ShellCommandExecutor.execute(Shell.java:589)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:678)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:661)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getUnixGroups(ShellBasedUnixGroupsMapping.java:83)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getGroups(ShellBasedUnixGroupsMapping.java:52)
+	at org.apache.hadoop.security.JniBasedUnixGroupsMappingWithFallback.getGroups(JniBasedUnixGroupsMappingWithFallback.java:50)
+	at org.apache.hadoop.security.Groups.getGroups(Groups.java:89)
+	at org.apache.hadoop.security.UserGroupInformation.getGroupNames(UserGroupInformation.java:1352)
+	at org.apache.hadoop.hdfs.server.namenode.FSPermissionChecker.<init>(FSPermissionChecker.java:63)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getPermissionChecker(FSNamesystem.java:3099)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getFileInfo(FSNamesystem.java:3274)
+	at org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.getFileInfo(NameNodeRpcServer.java:749)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolServerSideTranslatorPB.getFileInfo(ClientNamenodeProtocolServerSideTranslatorPB.java:692)
+	at org.apache.hadoop.hdfs.protocol.proto.ClientNamenodeProtocolProtos$ClientNamenodeProtocol$2.callBlockingMethod(ClientNamenodeProtocolProtos.java:59628)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:585)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:928)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2048)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2044)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:394)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1491)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2042)
+2014-04-06 17:07:53,939 WARN org.apache.hadoop.security.UserGroupInformation: No groups available for user dr.who
+2014-04-06 17:07:53,960 WARN org.apache.hadoop.security.ShellBasedUnixGroupsMapping: got exception trying to get groups for user dr.who
+org.apache.hadoop.util.Shell$ExitCodeException: id: dr.who: no such user
+
+	at org.apache.hadoop.util.Shell.runCommand(Shell.java:464)
+	at org.apache.hadoop.util.Shell.run(Shell.java:379)
+	at org.apache.hadoop.util.Shell$ShellCommandExecutor.execute(Shell.java:589)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:678)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:661)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getUnixGroups(ShellBasedUnixGroupsMapping.java:83)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getGroups(ShellBasedUnixGroupsMapping.java:52)
+	at org.apache.hadoop.security.JniBasedUnixGroupsMappingWithFallback.getGroups(JniBasedUnixGroupsMappingWithFallback.java:50)
+	at org.apache.hadoop.security.Groups.getGroups(Groups.java:89)
+	at org.apache.hadoop.security.UserGroupInformation.getGroupNames(UserGroupInformation.java:1352)
+	at org.apache.hadoop.hdfs.server.namenode.FSPermissionChecker.<init>(FSPermissionChecker.java:63)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getPermissionChecker(FSNamesystem.java:3099)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getListingInt(FSNamesystem.java:3875)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getListing(FSNamesystem.java:3864)
+	at org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.getListing(NameNodeRpcServer.java:737)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolServerSideTranslatorPB.getListing(ClientNamenodeProtocolServerSideTranslatorPB.java:514)
+	at org.apache.hadoop.hdfs.protocol.proto.ClientNamenodeProtocolProtos$ClientNamenodeProtocol$2.callBlockingMethod(ClientNamenodeProtocolProtos.java:59600)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:585)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:928)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2048)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2044)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:394)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1491)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2042)
+2014-04-06 17:07:53,961 WARN org.apache.hadoop.security.UserGroupInformation: No groups available for user dr.who
+2014-04-06 17:07:55,027 WARN org.apache.hadoop.security.ShellBasedUnixGroupsMapping: got exception trying to get groups for user dr.who
+org.apache.hadoop.util.Shell$ExitCodeException: id: dr.who: no such user
+
+	at org.apache.hadoop.util.Shell.runCommand(Shell.java:464)
+	at org.apache.hadoop.util.Shell.run(Shell.java:379)
+	at org.apache.hadoop.util.Shell$ShellCommandExecutor.execute(Shell.java:589)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:678)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:661)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getUnixGroups(ShellBasedUnixGroupsMapping.java:83)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getGroups(ShellBasedUnixGroupsMapping.java:52)
+	at org.apache.hadoop.security.JniBasedUnixGroupsMappingWithFallback.getGroups(JniBasedUnixGroupsMappingWithFallback.java:50)
+	at org.apache.hadoop.security.Groups.getGroups(Groups.java:89)
+	at org.apache.hadoop.security.UserGroupInformation.getGroupNames(UserGroupInformation.java:1352)
+	at org.apache.hadoop.hdfs.server.namenode.FSPermissionChecker.<init>(FSPermissionChecker.java:63)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getPermissionChecker(FSNamesystem.java:3099)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getFileInfo(FSNamesystem.java:3274)
+	at org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.getFileInfo(NameNodeRpcServer.java:749)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolServerSideTranslatorPB.getFileInfo(ClientNamenodeProtocolServerSideTranslatorPB.java:692)
+	at org.apache.hadoop.hdfs.protocol.proto.ClientNamenodeProtocolProtos$ClientNamenodeProtocol$2.callBlockingMethod(ClientNamenodeProtocolProtos.java:59628)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:585)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:928)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2048)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2044)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:394)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1491)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2042)
+2014-04-06 17:07:55,028 WARN org.apache.hadoop.security.UserGroupInformation: No groups available for user dr.who
+2014-04-06 17:07:55,050 WARN org.apache.hadoop.security.ShellBasedUnixGroupsMapping: got exception trying to get groups for user dr.who
+org.apache.hadoop.util.Shell$ExitCodeException: id: dr.who: no such user
+
+	at org.apache.hadoop.util.Shell.runCommand(Shell.java:464)
+	at org.apache.hadoop.util.Shell.run(Shell.java:379)
+	at org.apache.hadoop.util.Shell$ShellCommandExecutor.execute(Shell.java:589)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:678)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:661)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getUnixGroups(ShellBasedUnixGroupsMapping.java:83)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getGroups(ShellBasedUnixGroupsMapping.java:52)
+	at org.apache.hadoop.security.JniBasedUnixGroupsMappingWithFallback.getGroups(JniBasedUnixGroupsMappingWithFallback.java:50)
+	at org.apache.hadoop.security.Groups.getGroups(Groups.java:89)
+	at org.apache.hadoop.security.UserGroupInformation.getGroupNames(UserGroupInformation.java:1352)
+	at org.apache.hadoop.hdfs.server.namenode.FSPermissionChecker.<init>(FSPermissionChecker.java:63)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getPermissionChecker(FSNamesystem.java:3099)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getListingInt(FSNamesystem.java:3875)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getListing(FSNamesystem.java:3864)
+	at org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.getListing(NameNodeRpcServer.java:737)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolServerSideTranslatorPB.getListing(ClientNamenodeProtocolServerSideTranslatorPB.java:514)
+	at org.apache.hadoop.hdfs.protocol.proto.ClientNamenodeProtocolProtos$ClientNamenodeProtocol$2.callBlockingMethod(ClientNamenodeProtocolProtos.java:59600)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:585)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:928)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2048)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2044)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:394)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1491)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2042)
+2014-04-06 17:07:55,050 WARN org.apache.hadoop.security.UserGroupInformation: No groups available for user dr.who
+2014-04-06 17:07:55,886 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Roll Edit Log from 127.0.0.1
+2014-04-06 17:07:55,886 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Rolling edit logs
+2014-04-06 17:07:55,886 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Ending log segment 71
+2014-04-06 17:07:55,886 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Number of transactions: 2 Total time for transactions(ms): 0 Number of transactions batched in Syncs: 0 Number of syncs: 2 SyncTimes(ms): 5 
+2014-04-06 17:07:55,900 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Number of transactions: 2 Total time for transactions(ms): 0 Number of transactions batched in Syncs: 0 Number of syncs: 3 SyncTimes(ms): 19 
+2014-04-06 17:07:55,901 INFO org.apache.hadoop.hdfs.server.namenode.FileJournalManager: Finalizing edits file /Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/hdfs/name/current/edits_inprogress_0000000000000000071 -> /Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/hdfs/name/current/edits_0000000000000000071-0000000000000000072
+2014-04-06 17:07:55,901 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Starting log segment at 73
+2014-04-06 17:07:56,078 WARN org.apache.hadoop.security.ShellBasedUnixGroupsMapping: got exception trying to get groups for user dr.who
+org.apache.hadoop.util.Shell$ExitCodeException: id: dr.who: no such user
+
+	at org.apache.hadoop.util.Shell.runCommand(Shell.java:464)
+	at org.apache.hadoop.util.Shell.run(Shell.java:379)
+	at org.apache.hadoop.util.Shell$ShellCommandExecutor.execute(Shell.java:589)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:678)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:661)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getUnixGroups(ShellBasedUnixGroupsMapping.java:83)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getGroups(ShellBasedUnixGroupsMapping.java:52)
+	at org.apache.hadoop.security.JniBasedUnixGroupsMappingWithFallback.getGroups(JniBasedUnixGroupsMappingWithFallback.java:50)
+	at org.apache.hadoop.security.Groups.getGroups(Groups.java:89)
+	at org.apache.hadoop.security.UserGroupInformation.getGroupNames(UserGroupInformation.java:1352)
+	at org.apache.hadoop.hdfs.server.namenode.FSPermissionChecker.<init>(FSPermissionChecker.java:63)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getPermissionChecker(FSNamesystem.java:3099)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getFileInfo(FSNamesystem.java:3274)
+	at org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.getFileInfo(NameNodeRpcServer.java:749)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolServerSideTranslatorPB.getFileInfo(ClientNamenodeProtocolServerSideTranslatorPB.java:692)
+	at org.apache.hadoop.hdfs.protocol.proto.ClientNamenodeProtocolProtos$ClientNamenodeProtocol$2.callBlockingMethod(ClientNamenodeProtocolProtos.java:59628)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:585)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:928)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2048)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2044)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:394)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1491)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2042)
+2014-04-06 17:07:56,079 WARN org.apache.hadoop.security.UserGroupInformation: No groups available for user dr.who
+2014-04-06 17:07:56,105 WARN org.apache.hadoop.security.ShellBasedUnixGroupsMapping: got exception trying to get groups for user dr.who
+org.apache.hadoop.util.Shell$ExitCodeException: id: dr.who: no such user
+
+	at org.apache.hadoop.util.Shell.runCommand(Shell.java:464)
+	at org.apache.hadoop.util.Shell.run(Shell.java:379)
+	at org.apache.hadoop.util.Shell$ShellCommandExecutor.execute(Shell.java:589)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:678)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:661)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getUnixGroups(ShellBasedUnixGroupsMapping.java:83)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getGroups(ShellBasedUnixGroupsMapping.java:52)
+	at org.apache.hadoop.security.JniBasedUnixGroupsMappingWithFallback.getGroups(JniBasedUnixGroupsMappingWithFallback.java:50)
+	at org.apache.hadoop.security.Groups.getGroups(Groups.java:89)
+	at org.apache.hadoop.security.UserGroupInformation.getGroupNames(UserGroupInformation.java:1352)
+	at org.apache.hadoop.hdfs.server.namenode.FSPermissionChecker.<init>(FSPermissionChecker.java:63)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getPermissionChecker(FSNamesystem.java:3099)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getListingInt(FSNamesystem.java:3875)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getListing(FSNamesystem.java:3864)
+	at org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.getListing(NameNodeRpcServer.java:737)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolServerSideTranslatorPB.getListing(ClientNamenodeProtocolServerSideTranslatorPB.java:514)
+	at org.apache.hadoop.hdfs.protocol.proto.ClientNamenodeProtocolProtos$ClientNamenodeProtocol$2.callBlockingMethod(ClientNamenodeProtocolProtos.java:59600)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:585)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:928)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2048)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2044)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:394)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1491)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2042)
+2014-04-06 17:07:56,106 WARN org.apache.hadoop.security.UserGroupInformation: No groups available for user dr.who
+2014-04-06 17:07:56,291 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Opening connection to http://localhost:50090/getimage?getimage=1&txid=72&storageInfo=-47:1171046181:0:CID-dff0cbae-ad32-43e7-8802-22dc664a3720
+2014-04-06 17:07:56,456 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Transfer took 0.16s at 6.10 KB/s
+2014-04-06 17:07:56,456 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Downloaded file fsimage.ckpt_0000000000000000072 size 1624 bytes.
+2014-04-06 17:07:56,460 INFO org.apache.hadoop.hdfs.server.namenode.NNStorageRetentionManager: Going to retain 2 images with txid >= 70
+2014-04-06 17:07:56,460 INFO org.apache.hadoop.hdfs.server.namenode.NNStorageRetentionManager: Purging old image FSImageFile(file=/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/hdfs/name/current/fsimage_0000000000000000069, cpktTxId=0000000000000000069)
+2014-04-06 17:07:58,667 WARN org.apache.hadoop.security.ShellBasedUnixGroupsMapping: got exception trying to get groups for user dr.who
+org.apache.hadoop.util.Shell$ExitCodeException: id: dr.who: no such user
+
+	at org.apache.hadoop.util.Shell.runCommand(Shell.java:464)
+	at org.apache.hadoop.util.Shell.run(Shell.java:379)
+	at org.apache.hadoop.util.Shell$ShellCommandExecutor.execute(Shell.java:589)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:678)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:661)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getUnixGroups(ShellBasedUnixGroupsMapping.java:83)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getGroups(ShellBasedUnixGroupsMapping.java:52)
+	at org.apache.hadoop.security.JniBasedUnixGroupsMappingWithFallback.getGroups(JniBasedUnixGroupsMappingWithFallback.java:50)
+	at org.apache.hadoop.security.Groups.getGroups(Groups.java:89)
+	at org.apache.hadoop.security.UserGroupInformation.getGroupNames(UserGroupInformation.java:1352)
+	at org.apache.hadoop.hdfs.server.namenode.FSPermissionChecker.<init>(FSPermissionChecker.java:63)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getPermissionChecker(FSNamesystem.java:3099)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getFileInfo(FSNamesystem.java:3274)
+	at org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.getFileInfo(NameNodeRpcServer.java:749)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolServerSideTranslatorPB.getFileInfo(ClientNamenodeProtocolServerSideTranslatorPB.java:692)
+	at org.apache.hadoop.hdfs.protocol.proto.ClientNamenodeProtocolProtos$ClientNamenodeProtocol$2.callBlockingMethod(ClientNamenodeProtocolProtos.java:59628)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:585)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:928)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2048)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2044)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:394)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1491)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2042)
+2014-04-06 17:07:58,668 WARN org.apache.hadoop.security.UserGroupInformation: No groups available for user dr.who
+2014-04-06 17:07:58,690 WARN org.apache.hadoop.security.ShellBasedUnixGroupsMapping: got exception trying to get groups for user dr.who
+org.apache.hadoop.util.Shell$ExitCodeException: id: dr.who: no such user
+
+	at org.apache.hadoop.util.Shell.runCommand(Shell.java:464)
+	at org.apache.hadoop.util.Shell.run(Shell.java:379)
+	at org.apache.hadoop.util.Shell$ShellCommandExecutor.execute(Shell.java:589)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:678)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:661)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getUnixGroups(ShellBasedUnixGroupsMapping.java:83)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getGroups(ShellBasedUnixGroupsMapping.java:52)
+	at org.apache.hadoop.security.JniBasedUnixGroupsMappingWithFallback.getGroups(JniBasedUnixGroupsMappingWithFallback.java:50)
+	at org.apache.hadoop.security.Groups.getGroups(Groups.java:89)
+	at org.apache.hadoop.security.UserGroupInformation.getGroupNames(UserGroupInformation.java:1352)
+	at org.apache.hadoop.hdfs.server.namenode.FSPermissionChecker.<init>(FSPermissionChecker.java:63)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getPermissionChecker(FSNamesystem.java:3099)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getListingInt(FSNamesystem.java:3875)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getListing(FSNamesystem.java:3864)
+	at org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.getListing(NameNodeRpcServer.java:737)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolServerSideTranslatorPB.getListing(ClientNamenodeProtocolServerSideTranslatorPB.java:514)
+	at org.apache.hadoop.hdfs.protocol.proto.ClientNamenodeProtocolProtos$ClientNamenodeProtocol$2.callBlockingMethod(ClientNamenodeProtocolProtos.java:59600)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:585)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:928)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2048)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2044)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:394)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1491)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2042)
+2014-04-06 17:07:58,691 WARN org.apache.hadoop.security.UserGroupInformation: No groups available for user dr.who
+2014-04-06 17:08:00,152 WARN org.apache.hadoop.security.ShellBasedUnixGroupsMapping: got exception trying to get groups for user dr.who
+org.apache.hadoop.util.Shell$ExitCodeException: id: dr.who: no such user
+
+	at org.apache.hadoop.util.Shell.runCommand(Shell.java:464)
+	at org.apache.hadoop.util.Shell.run(Shell.java:379)
+	at org.apache.hadoop.util.Shell$ShellCommandExecutor.execute(Shell.java:589)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:678)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:661)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getUnixGroups(ShellBasedUnixGroupsMapping.java:83)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getGroups(ShellBasedUnixGroupsMapping.java:52)
+	at org.apache.hadoop.security.JniBasedUnixGroupsMappingWithFallback.getGroups(JniBasedUnixGroupsMappingWithFallback.java:50)
+	at org.apache.hadoop.security.Groups.getGroups(Groups.java:89)
+	at org.apache.hadoop.security.UserGroupInformation.getGroupNames(UserGroupInformation.java:1352)
+	at org.apache.hadoop.hdfs.server.namenode.FSPermissionChecker.<init>(FSPermissionChecker.java:63)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getPermissionChecker(FSNamesystem.java:3099)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getFileInfo(FSNamesystem.java:3274)
+	at org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.getFileInfo(NameNodeRpcServer.java:749)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolServerSideTranslatorPB.getFileInfo(ClientNamenodeProtocolServerSideTranslatorPB.java:692)
+	at org.apache.hadoop.hdfs.protocol.proto.ClientNamenodeProtocolProtos$ClientNamenodeProtocol$2.callBlockingMethod(ClientNamenodeProtocolProtos.java:59628)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:585)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:928)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2048)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2044)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:394)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1491)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2042)
+2014-04-06 17:08:00,153 WARN org.apache.hadoop.security.UserGroupInformation: No groups available for user dr.who
+2014-04-06 17:08:00,332 WARN org.apache.hadoop.security.ShellBasedUnixGroupsMapping: got exception trying to get groups for user dr.who
+org.apache.hadoop.util.Shell$ExitCodeException: id: dr.who: no such user
+
+	at org.apache.hadoop.util.Shell.runCommand(Shell.java:464)
+	at org.apache.hadoop.util.Shell.run(Shell.java:379)
+	at org.apache.hadoop.util.Shell$ShellCommandExecutor.execute(Shell.java:589)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:678)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:661)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getUnixGroups(ShellBasedUnixGroupsMapping.java:83)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getGroups(ShellBasedUnixGroupsMapping.java:52)
+	at org.apache.hadoop.security.JniBasedUnixGroupsMappingWithFallback.getGroups(JniBasedUnixGroupsMappingWithFallback.java:50)
+	at org.apache.hadoop.security.Groups.getGroups(Groups.java:89)
+	at org.apache.hadoop.security.UserGroupInformation.getGroupNames(UserGroupInformation.java:1352)
+	at org.apache.hadoop.hdfs.server.namenode.FSPermissionChecker.<init>(FSPermissionChecker.java:63)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getPermissionChecker(FSNamesystem.java:3099)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getBlockLocationsUpdateTimes(FSNamesystem.java:1471)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getBlockLocationsInt(FSNamesystem.java:1448)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getBlockLocations(FSNamesystem.java:1428)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getBlockLocations(FSNamesystem.java:1402)
+	at org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.getBlockLocations(NameNodeRpcServer.java:468)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolServerSideTranslatorPB.getBlockLocations(ClientNamenodeProtocolServerSideTranslatorPB.java:269)
+	at org.apache.hadoop.hdfs.protocol.proto.ClientNamenodeProtocolProtos$ClientNamenodeProtocol$2.callBlockingMethod(ClientNamenodeProtocolProtos.java:59566)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:585)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:928)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2048)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2044)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:394)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1491)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2042)
+2014-04-06 17:08:00,333 WARN org.apache.hadoop.security.UserGroupInformation: No groups available for user dr.who
+2014-04-06 17:08:00,401 WARN org.apache.hadoop.security.ShellBasedUnixGroupsMapping: got exception trying to get groups for user dr.who
+org.apache.hadoop.util.Shell$ExitCodeException: id: dr.who: no such user
+
+	at org.apache.hadoop.util.Shell.runCommand(Shell.java:464)
+	at org.apache.hadoop.util.Shell.run(Shell.java:379)
+	at org.apache.hadoop.util.Shell$ShellCommandExecutor.execute(Shell.java:589)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:678)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:661)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getUnixGroups(ShellBasedUnixGroupsMapping.java:83)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getGroups(ShellBasedUnixGroupsMapping.java:52)
+	at org.apache.hadoop.security.JniBasedUnixGroupsMappingWithFallback.getGroups(JniBasedUnixGroupsMappingWithFallback.java:50)
+	at org.apache.hadoop.security.Groups.getGroups(Groups.java:89)
+	at org.apache.hadoop.security.UserGroupInformation.getGroupNames(UserGroupInformation.java:1352)
+	at org.apache.hadoop.hdfs.server.namenode.FSPermissionChecker.<init>(FSPermissionChecker.java:63)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getPermissionChecker(FSNamesystem.java:3099)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getBlockLocationsUpdateTimes(FSNamesystem.java:1471)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getBlockLocationsInt(FSNamesystem.java:1448)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getBlockLocations(FSNamesystem.java:1428)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getBlockLocations(FSNamesystem.java:1402)
+	at org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.getBlockLocations(NameNodeRpcServer.java:468)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolServerSideTranslatorPB.getBlockLocations(ClientNamenodeProtocolServerSideTranslatorPB.java:269)
+	at org.apache.hadoop.hdfs.protocol.proto.ClientNamenodeProtocolProtos$ClientNamenodeProtocol$2.callBlockingMethod(ClientNamenodeProtocolProtos.java:59566)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:585)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:928)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2048)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2044)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:394)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1491)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2042)
+2014-04-06 17:08:00,401 WARN org.apache.hadoop.security.UserGroupInformation: No groups available for user dr.who
+2014-04-06 17:08:00,426 WARN org.apache.hadoop.security.ShellBasedUnixGroupsMapping: got exception trying to get groups for user dr.who
+org.apache.hadoop.util.Shell$ExitCodeException: id: dr.who: no such user
+
+	at org.apache.hadoop.util.Shell.runCommand(Shell.java:464)
+	at org.apache.hadoop.util.Shell.run(Shell.java:379)
+	at org.apache.hadoop.util.Shell$ShellCommandExecutor.execute(Shell.java:589)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:678)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:661)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getUnixGroups(ShellBasedUnixGroupsMapping.java:83)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getGroups(ShellBasedUnixGroupsMapping.java:52)
+	at org.apache.hadoop.security.JniBasedUnixGroupsMappingWithFallback.getGroups(JniBasedUnixGroupsMappingWithFallback.java:50)
+	at org.apache.hadoop.security.Groups.getGroups(Groups.java:89)
+	at org.apache.hadoop.security.UserGroupInformation.getGroupNames(UserGroupInformation.java:1352)
+	at org.apache.hadoop.hdfs.server.namenode.FSPermissionChecker.<init>(FSPermissionChecker.java:63)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getPermissionChecker(FSNamesystem.java:3099)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getBlockLocationsUpdateTimes(FSNamesystem.java:1471)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getBlockLocationsInt(FSNamesystem.java:1448)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getBlockLocations(FSNamesystem.java:1428)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getBlockLocations(FSNamesystem.java:1402)
+	at org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.getBlockLocations(NameNodeRpcServer.java:468)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolServerSideTranslatorPB.getBlockLocations(ClientNamenodeProtocolServerSideTranslatorPB.java:269)
+	at org.apache.hadoop.hdfs.protocol.proto.ClientNamenodeProtocolProtos$ClientNamenodeProtocol$2.callBlockingMethod(ClientNamenodeProtocolProtos.java:59566)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:585)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:928)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2048)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2044)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:394)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1491)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2042)
+2014-04-06 17:08:00,427 WARN org.apache.hadoop.security.UserGroupInformation: No groups available for user dr.who
+2014-04-06 17:08:00,453 WARN org.apache.hadoop.security.ShellBasedUnixGroupsMapping: got exception trying to get groups for user dr.who
+org.apache.hadoop.util.Shell$ExitCodeException: id: dr.who: no such user
+
+	at org.apache.hadoop.util.Shell.runCommand(Shell.java:464)
+	at org.apache.hadoop.util.Shell.run(Shell.java:379)
+	at org.apache.hadoop.util.Shell$ShellCommandExecutor.execute(Shell.java:589)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:678)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:661)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getUnixGroups(ShellBasedUnixGroupsMapping.java:83)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getGroups(ShellBasedUnixGroupsMapping.java:52)
+	at org.apache.hadoop.security.JniBasedUnixGroupsMappingWithFallback.getGroups(JniBasedUnixGroupsMappingWithFallback.java:50)
+	at org.apache.hadoop.security.Groups.getGroups(Groups.java:89)
+	at org.apache.hadoop.security.UserGroupInformation.getGroupNames(UserGroupInformation.java:1352)
+	at org.apache.hadoop.hdfs.server.namenode.FSPermissionChecker.<init>(FSPermissionChecker.java:63)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getPermissionChecker(FSNamesystem.java:3099)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getBlockLocationsUpdateTimes(FSNamesystem.java:1471)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getBlockLocationsInt(FSNamesystem.java:1448)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getBlockLocations(FSNamesystem.java:1428)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getBlockLocations(FSNamesystem.java:1402)
+	at org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.getBlockLocations(NameNodeRpcServer.java:468)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolServerSideTranslatorPB.getBlockLocations(ClientNamenodeProtocolServerSideTranslatorPB.java:269)
+	at org.apache.hadoop.hdfs.protocol.proto.ClientNamenodeProtocolProtos$ClientNamenodeProtocol$2.callBlockingMethod(ClientNamenodeProtocolProtos.java:59566)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:585)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:928)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2048)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2044)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:394)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1491)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2042)
+2014-04-06 17:08:00,453 WARN org.apache.hadoop.security.UserGroupInformation: No groups available for user dr.who
+2014-04-06 17:08:00,697 WARN org.apache.hadoop.security.ShellBasedUnixGroupsMapping: got exception trying to get groups for user dr.who
+org.apache.hadoop.util.Shell$ExitCodeException: id: dr.who: no such user
+
+	at org.apache.hadoop.util.Shell.runCommand(Shell.java:464)
+	at org.apache.hadoop.util.Shell.run(Shell.java:379)
+	at org.apache.hadoop.util.Shell$ShellCommandExecutor.execute(Shell.java:589)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:678)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:661)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getUnixGroups(ShellBasedUnixGroupsMapping.java:83)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getGroups(ShellBasedUnixGroupsMapping.java:52)
+	at org.apache.hadoop.security.JniBasedUnixGroupsMappingWithFallback.getGroups(JniBasedUnixGroupsMappingWithFallback.java:50)
+	at org.apache.hadoop.security.Groups.getGroups(Groups.java:89)
+	at org.apache.hadoop.security.UserGroupInformation.getGroupNames(UserGroupInformation.java:1352)
+	at org.apache.hadoop.hdfs.server.namenode.FSPermissionChecker.<init>(FSPermissionChecker.java:63)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getPermissionChecker(FSNamesystem.java:3099)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getBlockLocationsUpdateTimes(FSNamesystem.java:1471)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getBlockLocationsInt(FSNamesystem.java:1448)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getBlockLocations(FSNamesystem.java:1428)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getBlockLocations(FSNamesystem.java:1402)
+	at org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.getBlockLocations(NameNodeRpcServer.java:468)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolServerSideTranslatorPB.getBlockLocations(ClientNamenodeProtocolServerSideTranslatorPB.java:269)
+	at org.apache.hadoop.hdfs.protocol.proto.ClientNamenodeProtocolProtos$ClientNamenodeProtocol$2.callBlockingMethod(ClientNamenodeProtocolProtos.java:59566)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:585)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:928)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2048)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2044)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:394)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1491)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2042)
+2014-04-06 17:08:00,697 WARN org.apache.hadoop.security.UserGroupInformation: No groups available for user dr.who
+2014-04-06 17:08:06,829 WARN org.apache.hadoop.security.ShellBasedUnixGroupsMapping: got exception trying to get groups for user dr.who
+org.apache.hadoop.util.Shell$ExitCodeException: id: dr.who: no such user
+
+	at org.apache.hadoop.util.Shell.runCommand(Shell.java:464)
+	at org.apache.hadoop.util.Shell.run(Shell.java:379)
+	at org.apache.hadoop.util.Shell$ShellCommandExecutor.execute(Shell.java:589)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:678)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:661)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getUnixGroups(ShellBasedUnixGroupsMapping.java:83)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getGroups(ShellBasedUnixGroupsMapping.java:52)
+	at org.apache.hadoop.security.JniBasedUnixGroupsMappingWithFallback.getGroups(JniBasedUnixGroupsMappingWithFallback.java:50)
+	at org.apache.hadoop.security.Groups.getGroups(Groups.java:89)
+	at org.apache.hadoop.security.UserGroupInformation.getGroupNames(UserGroupInformation.java:1352)
+	at org.apache.hadoop.hdfs.server.namenode.FSPermissionChecker.<init>(FSPermissionChecker.java:63)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getPermissionChecker(FSNamesystem.java:3099)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getFileInfo(FSNamesystem.java:3274)
+	at org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.getFileInfo(NameNodeRpcServer.java:749)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolServerSideTranslatorPB.getFileInfo(ClientNamenodeProtocolServerSideTranslatorPB.java:692)
+	at org.apache.hadoop.hdfs.protocol.proto.ClientNamenodeProtocolProtos$ClientNamenodeProtocol$2.callBlockingMethod(ClientNamenodeProtocolProtos.java:59628)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:585)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:928)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2048)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2044)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:394)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1491)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2042)
+2014-04-06 17:08:06,950 WARN org.apache.hadoop.security.UserGroupInformation: No groups available for user dr.who
+2014-04-06 17:08:06,974 WARN org.apache.hadoop.security.ShellBasedUnixGroupsMapping: got exception trying to get groups for user dr.who
+org.apache.hadoop.util.Shell$ExitCodeException: id: dr.who: no such user
+
+	at org.apache.hadoop.util.Shell.runCommand(Shell.java:464)
+	at org.apache.hadoop.util.Shell.run(Shell.java:379)
+	at org.apache.hadoop.util.Shell$ShellCommandExecutor.execute(Shell.java:589)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:678)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:661)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getUnixGroups(ShellBasedUnixGroupsMapping.java:83)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getGroups(ShellBasedUnixGroupsMapping.java:52)
+	at org.apache.hadoop.security.JniBasedUnixGroupsMappingWithFallback.getGroups(JniBasedUnixGroupsMappingWithFallback.java:50)
+	at org.apache.hadoop.security.Groups.getGroups(Groups.java:89)
+	at org.apache.hadoop.security.UserGroupInformation.getGroupNames(UserGroupInformation.java:1352)
+	at org.apache.hadoop.hdfs.server.namenode.FSPermissionChecker.<init>(FSPermissionChecker.java:63)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getPermissionChecker(FSNamesystem.java:3099)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getListingInt(FSNamesystem.java:3875)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getListing(FSNamesystem.java:3864)
+	at org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.getListing(NameNodeRpcServer.java:737)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolServerSideTranslatorPB.getListing(ClientNamenodeProtocolServerSideTranslatorPB.java:514)
+	at org.apache.hadoop.hdfs.protocol.proto.ClientNamenodeProtocolProtos$ClientNamenodeProtocol$2.callBlockingMethod(ClientNamenodeProtocolProtos.java:59600)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:585)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:928)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2048)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2044)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:394)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1491)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2042)
+2014-04-06 17:08:06,974 WARN org.apache.hadoop.security.UserGroupInformation: No groups available for user dr.who
+2014-04-06 17:08:08,177 WARN org.apache.hadoop.security.ShellBasedUnixGroupsMapping: got exception trying to get groups for user dr.who
+org.apache.hadoop.util.Shell$ExitCodeException: id: dr.who: no such user
+
+	at org.apache.hadoop.util.Shell.runCommand(Shell.java:464)
+	at org.apache.hadoop.util.Shell.run(Shell.java:379)
+	at org.apache.hadoop.util.Shell$ShellCommandExecutor.execute(Shell.java:589)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:678)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:661)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getUnixGroups(ShellBasedUnixGroupsMapping.java:83)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getGroups(ShellBasedUnixGroupsMapping.java:52)
+	at org.apache.hadoop.security.JniBasedUnixGroupsMappingWithFallback.getGroups(JniBasedUnixGroupsMappingWithFallback.java:50)
+	at org.apache.hadoop.security.Groups.getGroups(Groups.java:89)
+	at org.apache.hadoop.security.UserGroupInformation.getGroupNames(UserGroupInformation.java:1352)
+	at org.apache.hadoop.hdfs.server.namenode.FSPermissionChecker.<init>(FSPermissionChecker.java:63)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getPermissionChecker(FSNamesystem.java:3099)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getFileInfo(FSNamesystem.java:3274)
+	at org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.getFileInfo(NameNodeRpcServer.java:749)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolServerSideTranslatorPB.getFileInfo(ClientNamenodeProtocolServerSideTranslatorPB.java:692)
+	at org.apache.hadoop.hdfs.protocol.proto.ClientNamenodeProtocolProtos$ClientNamenodeProtocol$2.callBlockingMethod(ClientNamenodeProtocolProtos.java:59628)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:585)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:928)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2048)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2044)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:394)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1491)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2042)
+2014-04-06 17:08:08,178 WARN org.apache.hadoop.security.UserGroupInformation: No groups available for user dr.who
+2014-04-06 17:08:08,199 WARN org.apache.hadoop.security.ShellBasedUnixGroupsMapping: got exception trying to get groups for user dr.who
+org.apache.hadoop.util.Shell$ExitCodeException: id: dr.who: no such user
+
+	at org.apache.hadoop.util.Shell.runCommand(Shell.java:464)
+	at org.apache.hadoop.util.Shell.run(Shell.java:379)
+	at org.apache.hadoop.util.Shell$ShellCommandExecutor.execute(Shell.java:589)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:678)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:661)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getUnixGroups(ShellBasedUnixGroupsMapping.java:83)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getGroups(ShellBasedUnixGroupsMapping.java:52)
+	at org.apache.hadoop.security.JniBasedUnixGroupsMappingWithFallback.getGroups(JniBasedUnixGroupsMappingWithFallback.java:50)
+	at org.apache.hadoop.security.Groups.getGroups(Groups.java:89)
+	at org.apache.hadoop.security.UserGroupInformation.getGroupNames(UserGroupInformation.java:1352)
+	at org.apache.hadoop.hdfs.server.namenode.FSPermissionChecker.<init>(FSPermissionChecker.java:63)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getPermissionChecker(FSNamesystem.java:3099)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getBlockLocationsUpdateTimes(FSNamesystem.java:1471)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getBlockLocationsInt(FSNamesystem.java:1448)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getBlockLocations(FSNamesystem.java:1428)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getBlockLocations(FSNamesystem.java:1402)
+	at org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.getBlockLocations(NameNodeRpcServer.java:468)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolServerSideTranslatorPB.getBlockLocations(ClientNamenodeProtocolServerSideTranslatorPB.java:269)
+	at org.apache.hadoop.hdfs.protocol.proto.ClientNamenodeProtocolProtos$ClientNamenodeProtocol$2.callBlockingMethod(ClientNamenodeProtocolProtos.java:59566)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:585)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:928)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2048)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2044)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:394)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1491)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2042)
+2014-04-06 17:08:08,200 WARN org.apache.hadoop.security.UserGroupInformation: No groups available for user dr.who
+2014-04-06 17:08:08,229 WARN org.apache.hadoop.security.ShellBasedUnixGroupsMapping: got exception trying to get groups for user dr.who
+org.apache.hadoop.util.Shell$ExitCodeException: id: dr.who: no such user
+
+	at org.apache.hadoop.util.Shell.runCommand(Shell.java:464)
+	at org.apache.hadoop.util.Shell.run(Shell.java:379)
+	at org.apache.hadoop.util.Shell$ShellCommandExecutor.execute(Shell.java:589)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:678)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:661)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getUnixGroups(ShellBasedUnixGroupsMapping.java:83)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getGroups(ShellBasedUnixGroupsMapping.java:52)
+	at org.apache.hadoop.security.JniBasedUnixGroupsMappingWithFallback.getGroups(JniBasedUnixGroupsMappingWithFallback.java:50)
+	at org.apache.hadoop.security.Groups.getGroups(Groups.java:89)
+	at org.apache.hadoop.security.UserGroupInformation.getGroupNames(UserGroupInformation.java:1352)
+	at org.apache.hadoop.hdfs.server.namenode.FSPermissionChecker.<init>(FSPermissionChecker.java:63)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getPermissionChecker(FSNamesystem.java:3099)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getBlockLocationsUpdateTimes(FSNamesystem.java:1471)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getBlockLocationsInt(FSNamesystem.java:1448)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getBlockLocations(FSNamesystem.java:1428)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getBlockLocations(FSNamesystem.java:1402)
+	at org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.getBlockLocations(NameNodeRpcServer.java:468)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolServerSideTranslatorPB.getBlockLocations(ClientNamenodeProtocolServerSideTranslatorPB.java:269)
+	at org.apache.hadoop.hdfs.protocol.proto.ClientNamenodeProtocolProtos$ClientNamenodeProtocol$2.callBlockingMethod(ClientNamenodeProtocolProtos.java:59566)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:585)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:928)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2048)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2044)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:394)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1491)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2042)
+2014-04-06 17:08:08,230 WARN org.apache.hadoop.security.UserGroupInformation: No groups available for user dr.who
+2014-04-06 17:08:08,257 WARN org.apache.hadoop.security.ShellBasedUnixGroupsMapping: got exception trying to get groups for user dr.who
+org.apache.hadoop.util.Shell$ExitCodeException: id: dr.who: no such user
+
+	at org.apache.hadoop.util.Shell.runCommand(Shell.java:464)
+	at org.apache.hadoop.util.Shell.run(Shell.java:379)
+	at org.apache.hadoop.util.Shell$ShellCommandExecutor.execute(Shell.java:589)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:678)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:661)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getUnixGroups(ShellBasedUnixGroupsMapping.java:83)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getGroups(ShellBasedUnixGroupsMapping.java:52)
+	at org.apache.hadoop.security.JniBasedUnixGroupsMappingWithFallback.getGroups(JniBasedUnixGroupsMappingWithFallback.java:50)
+	at org.apache.hadoop.security.Groups.getGroups(Groups.java:89)
+	at org.apache.hadoop.security.UserGroupInformation.getGroupNames(UserGroupInformation.java:1352)
+	at org.apache.hadoop.hdfs.server.namenode.FSPermissionChecker.<init>(FSPermissionChecker.java:63)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getPermissionChecker(FSNamesystem.java:3099)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getBlockLocationsUpdateTimes(FSNamesystem.java:1471)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getBlockLocationsInt(FSNamesystem.java:1448)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getBlockLocations(FSNamesystem.java:1428)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getBlockLocations(FSNamesystem.java:1402)
+	at org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.getBlockLocations(NameNodeRpcServer.java:468)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolServerSideTranslatorPB.getBlockLocations(ClientNamenodeProtocolServerSideTranslatorPB.java:269)
+	at org.apache.hadoop.hdfs.protocol.proto.ClientNamenodeProtocolProtos$ClientNamenodeProtocol$2.callBlockingMethod(ClientNamenodeProtocolProtos.java:59566)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:585)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:928)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2048)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2044)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:394)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1491)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2042)
+2014-04-06 17:08:08,258 WARN org.apache.hadoop.security.UserGroupInformation: No groups available for user dr.who
+2014-04-06 17:08:08,280 WARN org.apache.hadoop.security.ShellBasedUnixGroupsMapping: got exception trying to get groups for user dr.who
+org.apache.hadoop.util.Shell$ExitCodeException: id: dr.who: no such user
+
+	at org.apache.hadoop.util.Shell.runCommand(Shell.java:464)
+	at org.apache.hadoop.util.Shell.run(Shell.java:379)
+	at org.apache.hadoop.util.Shell$ShellCommandExecutor.execute(Shell.java:589)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:678)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:661)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getUnixGroups(ShellBasedUnixGroupsMapping.java:83)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getGroups(ShellBasedUnixGroupsMapping.java:52)
+	at org.apache.hadoop.security.JniBasedUnixGroupsMappingWithFallback.getGroups(JniBasedUnixGroupsMappingWithFallback.java:50)
+	at org.apache.hadoop.security.Groups.getGroups(Groups.java:89)
+	at org.apache.hadoop.security.UserGroupInformation.getGroupNames(UserGroupInformation.java:1352)
+	at org.apache.hadoop.hdfs.server.namenode.FSPermissionChecker.<init>(FSPermissionChecker.java:63)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getPermissionChecker(FSNamesystem.java:3099)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getBlockLocationsUpdateTimes(FSNamesystem.java:1471)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getBlockLocationsInt(FSNamesystem.java:1448)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getBlockLocations(FSNamesystem.java:1428)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getBlockLocations(FSNamesystem.java:1402)
+	at org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.getBlockLocations(NameNodeRpcServer.java:468)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolServerSideTranslatorPB.getBlockLocations(ClientNamenodeProtocolServerSideTranslatorPB.java:269)
+	at org.apache.hadoop.hdfs.protocol.proto.ClientNamenodeProtocolProtos$ClientNamenodeProtocol$2.callBlockingMethod(ClientNamenodeProtocolProtos.java:59566)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:585)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:928)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2048)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2044)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:394)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1491)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2042)
+2014-04-06 17:08:08,281 WARN org.apache.hadoop.security.UserGroupInformation: No groups available for user dr.who
+2014-04-06 17:08:08,367 WARN org.apache.hadoop.security.ShellBasedUnixGroupsMapping: got exception trying to get groups for user dr.who
+org.apache.hadoop.util.Shell$ExitCodeException: id: dr.who: no such user
+
+	at org.apache.hadoop.util.Shell.runCommand(Shell.java:464)
+	at org.apache.hadoop.util.Shell.run(Shell.java:379)
+	at org.apache.hadoop.util.Shell$ShellCommandExecutor.execute(Shell.java:589)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:678)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:661)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getUnixGroups(ShellBasedUnixGroupsMapping.java:83)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getGroups(ShellBasedUnixGroupsMapping.java:52)
+	at org.apache.hadoop.security.JniBasedUnixGroupsMappingWithFallback.getGroups(JniBasedUnixGroupsMappingWithFallback.java:50)
+	at org.apache.hadoop.security.Groups.getGroups(Groups.java:89)
+	at org.apache.hadoop.security.UserGroupInformation.getGroupNames(UserGroupInformation.java:1352)
+	at org.apache.hadoop.hdfs.server.namenode.FSPermissionChecker.<init>(FSPermissionChecker.java:63)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getPermissionChecker(FSNamesystem.java:3099)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getBlockLocationsUpdateTimes(FSNamesystem.java:1471)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getBlockLocationsInt(FSNamesystem.java:1448)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getBlockLocations(FSNamesystem.java:1428)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getBlockLocations(FSNamesystem.java:1402)
+	at org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.getBlockLocations(NameNodeRpcServer.java:468)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolServerSideTranslatorPB.getBlockLocations(ClientNamenodeProtocolServerSideTranslatorPB.java:269)
+	at org.apache.hadoop.hdfs.protocol.proto.ClientNamenodeProtocolProtos$ClientNamenodeProtocol$2.callBlockingMethod(ClientNamenodeProtocolProtos.java:59566)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:585)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:928)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2048)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2044)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:394)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1491)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2042)
+2014-04-06 17:08:08,368 WARN org.apache.hadoop.security.UserGroupInformation: No groups available for user dr.who
+2014-04-06 17:13:11,568 WARN org.apache.hadoop.hdfs.server.namenode.FSNamesystem: trying to get DT with no secret manager running
+2014-04-06 17:13:11,635 WARN org.apache.hadoop.security.ShellBasedUnixGroupsMapping: got exception trying to get groups for user dr.who
+org.apache.hadoop.util.Shell$ExitCodeException: id: dr.who: no such user
+
+	at org.apache.hadoop.util.Shell.runCommand(Shell.java:464)
+	at org.apache.hadoop.util.Shell.run(Shell.java:379)
+	at org.apache.hadoop.util.Shell$ShellCommandExecutor.execute(Shell.java:589)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:678)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:661)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getUnixGroups(ShellBasedUnixGroupsMapping.java:83)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getGroups(ShellBasedUnixGroupsMapping.java:52)
+	at org.apache.hadoop.security.JniBasedUnixGroupsMappingWithFallback.getGroups(JniBasedUnixGroupsMappingWithFallback.java:50)
+	at org.apache.hadoop.security.Groups.getGroups(Groups.java:89)
+	at org.apache.hadoop.security.UserGroupInformation.getGroupNames(UserGroupInformation.java:1352)
+	at org.apache.hadoop.hdfs.server.namenode.FSPermissionChecker.<init>(FSPermissionChecker.java:63)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getPermissionChecker(FSNamesystem.java:3099)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getFileInfo(FSNamesystem.java:3274)
+	at org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.getFileInfo(NameNodeRpcServer.java:749)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolServerSideTranslatorPB.getFileInfo(ClientNamenodeProtocolServerSideTranslatorPB.java:692)
+	at org.apache.hadoop.hdfs.protocol.proto.ClientNamenodeProtocolProtos$ClientNamenodeProtocol$2.callBlockingMethod(ClientNamenodeProtocolProtos.java:59628)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:585)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:928)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2048)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2044)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:394)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1491)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2042)
+2014-04-06 17:13:11,636 WARN org.apache.hadoop.security.UserGroupInformation: No groups available for user dr.who
+2014-04-06 17:13:11,657 WARN org.apache.hadoop.security.ShellBasedUnixGroupsMapping: got exception trying to get groups for user dr.who
+org.apache.hadoop.util.Shell$ExitCodeException: id: dr.who: no such user
+
+	at org.apache.hadoop.util.Shell.runCommand(Shell.java:464)
+	at org.apache.hadoop.util.Shell.run(Shell.java:379)
+	at org.apache.hadoop.util.Shell$ShellCommandExecutor.execute(Shell.java:589)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:678)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:661)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getUnixGroups(ShellBasedUnixGroupsMapping.java:83)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getGroups(ShellBasedUnixGroupsMapping.java:52)
+	at org.apache.hadoop.security.JniBasedUnixGroupsMappingWithFallback.getGroups(JniBasedUnixGroupsMappingWithFallback.java:50)
+	at org.apache.hadoop.security.Groups.getGroups(Groups.java:89)
+	at org.apache.hadoop.security.UserGroupInformation.getGroupNames(UserGroupInformation.java:1352)
+	at org.apache.hadoop.hdfs.server.namenode.FSPermissionChecker.<init>(FSPermissionChecker.java:63)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getPermissionChecker(FSNamesystem.java:3099)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getListingInt(FSNamesystem.java:3875)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getListing(FSNamesystem.java:3864)
+	at org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.getListing(NameNodeRpcServer.java:737)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolServerSideTranslatorPB.getListing(ClientNamenodeProtocolServerSideTranslatorPB.java:514)
+	at org.apache.hadoop.hdfs.protocol.proto.ClientNamenodeProtocolProtos$ClientNamenodeProtocol$2.callBlockingMethod(ClientNamenodeProtocolProtos.java:59600)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:585)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:928)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2048)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2044)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:394)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1491)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2042)
+2014-04-06 17:13:11,657 WARN org.apache.hadoop.security.UserGroupInformation: No groups available for user dr.who
+2014-04-06 17:13:38,751 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Number of transactions: 7 Total time for transactions(ms): 0 Number of transactions batched in Syncs: 0 Number of syncs: 2 SyncTimes(ms): 4 
+2014-04-06 17:13:39,352 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* allocateBlock: /j/_temporary/0/_temporary/attempt_local1489171987_0001_r_000000_0/part-00000. BP-227790035-192.168.1.3-1396137359197 blk_1073741829_1005{blockUCState=UNDER_CONSTRUCTION, primaryNodeIndex=-1, replicas=[ReplicaUnderConstruction[127.0.0.1:50010|RBW]]}
+2014-04-06 17:13:39,442 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: BLOCK* checkFileProgress: blk_1073741829_1005{blockUCState=COMMITTED, primaryNodeIndex=-1, replicas=[ReplicaUnderConstruction[127.0.0.1:50010|RBW]]} has not reached minimal replication 1
+2014-04-06 17:13:39,442 INFO org.apache.hadoop.hdfs.StateChange: DIR* completeFile: /j/_temporary/0/_temporary/attempt_local1489171987_0001_r_000000_0/part-00000 is closed by DFSClient_NONMAPREDUCE_302661746_1
+2014-04-06 17:13:39,454 INFO BlockStateChange: BLOCK* addStoredBlock: blockMap updated: 127.0.0.1:50010 is added to blk_1073741829_1005{blockUCState=COMMITTED, primaryNodeIndex=-1, replicas=[ReplicaUnderConstruction[127.0.0.1:50010|RBW]]} size 22
+2014-04-06 17:13:39,853 INFO org.apache.hadoop.hdfs.StateChange: DIR* completeFile: /j/_temporary/0/_temporary/attempt_local1489171987_0001_r_000000_0/part-00000 is closed by DFSClient_NONMAPREDUCE_302661746_1
+2014-04-06 17:13:39,912 INFO org.apache.hadoop.hdfs.StateChange: DIR* completeFile: /j/_SUCCESS is closed by DFSClient_NONMAPREDUCE_302661746_1
+2014-04-06 17:13:46,912 WARN org.apache.hadoop.security.ShellBasedUnixGroupsMapping: got exception trying to get groups for user dr.who
+org.apache.hadoop.util.Shell$ExitCodeException: id: dr.who: no such user
+
+	at org.apache.hadoop.util.Shell.runCommand(Shell.java:464)
+	at org.apache.hadoop.util.Shell.run(Shell.java:379)
+	at org.apache.hadoop.util.Shell$ShellCommandExecutor.execute(Shell.java:589)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:678)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:661)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getUnixGroups(ShellBasedUnixGroupsMapping.java:83)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getGroups(ShellBasedUnixGroupsMapping.java:52)
+	at org.apache.hadoop.security.JniBasedUnixGroupsMappingWithFallback.getGroups(JniBasedUnixGroupsMappingWithFallback.java:50)
+	at org.apache.hadoop.security.Groups.getGroups(Groups.java:89)
+	at org.apache.hadoop.security.UserGroupInformation.getGroupNames(UserGroupInformation.java:1352)
+	at org.apache.hadoop.hdfs.server.namenode.FSPermissionChecker.<init>(FSPermissionChecker.java:63)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getPermissionChecker(FSNamesystem.java:3099)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getFileInfo(FSNamesystem.java:3274)
+	at org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.getFileInfo(NameNodeRpcServer.java:749)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolServerSideTranslatorPB.getFileInfo(ClientNamenodeProtocolServerSideTranslatorPB.java:692)
+	at org.apache.hadoop.hdfs.protocol.proto.ClientNamenodeProtocolProtos$ClientNamenodeProtocol$2.callBlockingMethod(ClientNamenodeProtocolProtos.java:59628)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:585)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:928)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2048)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2044)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:394)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1491)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2042)
+2014-04-06 17:13:46,913 WARN org.apache.hadoop.security.UserGroupInformation: No groups available for user dr.who
+2014-04-06 17:13:46,934 WARN org.apache.hadoop.security.ShellBasedUnixGroupsMapping: got exception trying to get groups for user dr.who
+org.apache.hadoop.util.Shell$ExitCodeException: id: dr.who: no such user
+
+	at org.apache.hadoop.util.Shell.runCommand(Shell.java:464)
+	at org.apache.hadoop.util.Shell.run(Shell.java:379)
+	at org.apache.hadoop.util.Shell$ShellCommandExecutor.execute(Shell.java:589)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:678)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:661)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getUnixGroups(ShellBasedUnixGroupsMapping.java:83)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getGroups(ShellBasedUnixGroupsMapping.java:52)
+	at org.apache.hadoop.security.JniBasedUnixGroupsMappingWithFallback.getGroups(JniBasedUnixGroupsMappingWithFallback.java:50)
+	at org.apache.hadoop.security.Groups.getGroups(Groups.java:89)
+	at org.apache.hadoop.security.UserGroupInformation.getGroupNames(UserGroupInformation.java:1352)
+	at org.apache.hadoop.hdfs.server.namenode.FSPermissionChecker.<init>(FSPermissionChecker.java:63)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getPermissionChecker(FSNamesystem.java:3099)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getListingInt(FSNamesystem.java:3875)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getListing(FSNamesystem.java:3864)
+	at org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.getListing(NameNodeRpcServer.java:737)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolServerSideTranslatorPB.getListing(ClientNamenodeProtocolServerSideTranslatorPB.java:514)
+	at org.apache.hadoop.hdfs.protocol.proto.ClientNamenodeProtocolProtos$ClientNamenodeProtocol$2.callBlockingMethod(ClientNamenodeProtocolProtos.java:59600)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:585)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:928)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2048)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2044)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:394)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1491)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2042)
+2014-04-06 17:13:46,935 WARN org.apache.hadoop.security.UserGroupInformation: No groups available for user dr.who
+2014-04-06 17:13:51,817 WARN org.apache.hadoop.security.ShellBasedUnixGroupsMapping: got exception trying to get groups for user dr.who
+org.apache.hadoop.util.Shell$ExitCodeException: id: dr.who: no such user
+
+	at org.apache.hadoop.util.Shell.runCommand(Shell.java:464)
+	at org.apache.hadoop.util.Shell.run(Shell.java:379)
+	at org.apache.hadoop.util.Shell$ShellCommandExecutor.execute(Shell.java:589)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:678)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:661)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getUnixGroups(ShellBasedUnixGroupsMapping.java:83)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getGroups(ShellBasedUnixGroupsMapping.java:52)
+	at org.apache.hadoop.security.JniBasedUnixGroupsMappingWithFallback.getGroups(JniBasedUnixGroupsMappingWithFallback.java:50)
+	at org.apache.hadoop.security.Groups.getGroups(Groups.java:89)
+	at org.apache.hadoop.security.UserGroupInformation.getGroupNames(UserGroupInformation.java:1352)
+	at org.apache.hadoop.hdfs.server.namenode.FSPermissionChecker.<init>(FSPermissionChecker.java:63)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getPermissionChecker(FSNamesystem.java:3099)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getFileInfo(FSNamesystem.java:3274)
+	at org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.getFileInfo(NameNodeRpcServer.java:749)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolServerSideTranslatorPB.getFileInfo(ClientNamenodeProtocolServerSideTranslatorPB.java:692)
+	at org.apache.hadoop.hdfs.protocol.proto.ClientNamenodeProtocolProtos$ClientNamenodeProtocol$2.callBlockingMethod(ClientNamenodeProtocolProtos.java:59628)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:585)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:928)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2048)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2044)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:394)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1491)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2042)
+2014-04-06 17:13:51,818 WARN org.apache.hadoop.security.UserGroupInformation: No groups available for user dr.who
+2014-04-06 17:13:51,840 WARN org.apache.hadoop.security.ShellBasedUnixGroupsMapping: got exception trying to get groups for user dr.who
+org.apache.hadoop.util.Shell$ExitCodeException: id: dr.who: no such user
+
+	at org.apache.hadoop.util.Shell.runCommand(Shell.java:464)
+	at org.apache.hadoop.util.Shell.run(Shell.java:379)
+	at org.apache.hadoop.util.Shell$ShellCommandExecutor.execute(Shell.java:589)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:678)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:661)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getUnixGroups(ShellBasedUnixGroupsMapping.java:83)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getGroups(ShellBasedUnixGroupsMapping.java:52)
+	at org.apache.hadoop.security.JniBasedUnixGroupsMappingWithFallback.getGroups(JniBasedUnixGroupsMappingWithFallback.java:50)
+	at org.apache.hadoop.security.Groups.getGroups(Groups.java:89)
+	at org.apache.hadoop.security.UserGroupInformation.getGroupNames(UserGroupInformation.java:1352)
+	at org.apache.hadoop.hdfs.server.namenode.FSPermissionChecker.<init>(FSPermissionChecker.java:63)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getPermissionChecker(FSNamesystem.java:3099)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getListingInt(FSNamesystem.java:3875)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getListing(FSNamesystem.java:3864)
+	at org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.getListing(NameNodeRpcServer.java:737)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolServerSideTranslatorPB.getListing(ClientNamenodeProtocolServerSideTranslatorPB.java:514)
+	at org.apache.hadoop.hdfs.protocol.proto.ClientNamenodeProtocolProtos$ClientNamenodeProtocol$2.callBlockingMethod(ClientNamenodeProtocolProtos.java:59600)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:585)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:928)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2048)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2044)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:394)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1491)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2042)
+2014-04-06 17:13:51,840 WARN org.apache.hadoop.security.UserGroupInformation: No groups available for user dr.who
+2014-04-06 17:13:53,339 WARN org.apache.hadoop.security.ShellBasedUnixGroupsMapping: got exception trying to get groups for user dr.who
+org.apache.hadoop.util.Shell$ExitCodeException: id: dr.who: no such user
+
+	at org.apache.hadoop.util.Shell.runCommand(Shell.java:464)
+	at org.apache.hadoop.util.Shell.run(Shell.java:379)
+	at org.apache.hadoop.util.Shell$ShellCommandExecutor.execute(Shell.java:589)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:678)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:661)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getUnixGroups(ShellBasedUnixGroupsMapping.java:83)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getGroups(ShellBasedUnixGroupsMapping.java:52)
+	at org.apache.hadoop.security.JniBasedUnixGroupsMappingWithFallback.getGroups(JniBasedUnixGroupsMappingWithFallback.java:50)
+	at org.apache.hadoop.security.Groups.getGroups(Groups.java:89)
+	at org.apache.hadoop.security.UserGroupInformation.getGroupNames(UserGroupInformation.java:1352)
+	at org.apache.hadoop.hdfs.server.namenode.FSPermissionChecker.<init>(FSPermissionChecker.java:63)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getPermissionChecker(FSNamesystem.java:3099)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getFileInfo(FSNamesystem.java:3274)
+	at org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.getFileInfo(NameNodeRpcServer.java:749)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolServerSideTranslatorPB.getFileInfo(ClientNamenodeProtocolServerSideTranslatorPB.java:692)
+	at org.apache.hadoop.hdfs.protocol.proto.ClientNamenodeProtocolProtos$ClientNamenodeProtocol$2.callBlockingMethod(ClientNamenodeProtocolProtos.java:59628)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:585)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:928)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2048)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2044)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:394)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1491)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2042)
+2014-04-06 17:13:53,339 WARN org.apache.hadoop.security.UserGroupInformation: No groups available for user dr.who
+2014-04-06 17:13:53,361 WARN org.apache.hadoop.security.ShellBasedUnixGroupsMapping: got exception trying to get groups for user dr.who
+org.apache.hadoop.util.Shell$ExitCodeException: id: dr.who: no such user
+
+	at org.apache.hadoop.util.Shell.runCommand(Shell.java:464)
+	at org.apache.hadoop.util.Shell.run(Shell.java:379)
+	at org.apache.hadoop.util.Shell$ShellCommandExecutor.execute(Shell.java:589)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:678)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:661)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getUnixGroups(ShellBasedUnixGroupsMapping.java:83)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getGroups(ShellBasedUnixGroupsMapping.java:52)
+	at org.apache.hadoop.security.JniBasedUnixGroupsMappingWithFallback.getGroups(JniBasedUnixGroupsMappingWithFallback.java:50)
+	at org.apache.hadoop.security.Groups.getGroups(Groups.java:89)
+	at org.apache.hadoop.security.UserGroupInformation.getGroupNames(UserGroupInformation.java:1352)
+	at org.apache.hadoop.hdfs.server.namenode.FSPermissionChecker.<init>(FSPermissionChecker.java:63)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getPermissionChecker(FSNamesystem.java:3099)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getBlockLocationsUpdateTimes(FSNamesystem.java:1471)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getBlockLocationsInt(FSNamesystem.java:1448)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getBlockLocations(FSNamesystem.java:1428)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getBlockLocations(FSNamesystem.java:1402)
+	at org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.getBlockLocations(NameNodeRpcServer.java:468)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolServerSideTranslatorPB.getBlockLocations(ClientNamenodeProtocolServerSideTranslatorPB.java:269)
+	at org.apache.hadoop.hdfs.protocol.proto.ClientNamenodeProtocolProtos$ClientNamenodeProtocol$2.callBlockingMethod(ClientNamenodeProtocolProtos.java:59566)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:585)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:928)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2048)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2044)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:394)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1491)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2042)
+2014-04-06 17:13:53,362 WARN org.apache.hadoop.security.UserGroupInformation: No groups available for user dr.who
+2014-04-06 17:13:53,393 WARN org.apache.hadoop.security.ShellBasedUnixGroupsMapping: got exception trying to get groups for user dr.who
+org.apache.hadoop.util.Shell$ExitCodeException: id: dr.who: no such user
+
+	at org.apache.hadoop.util.Shell.runCommand(Shell.java:464)
+	at org.apache.hadoop.util.Shell.run(Shell.java:379)
+	at org.apache.hadoop.util.Shell$ShellCommandExecutor.execute(Shell.java:589)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:678)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:661)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getUnixGroups(ShellBasedUnixGroupsMapping.java:83)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getGroups(ShellBasedUnixGroupsMapping.java:52)
+	at org.apache.hadoop.security.JniBasedUnixGroupsMappingWithFallback.getGroups(JniBasedUnixGroupsMappingWithFallback.java:50)
+	at org.apache.hadoop.security.Groups.getGroups(Groups.java:89)
+	at org.apache.hadoop.security.UserGroupInformation.getGroupNames(UserGroupInformation.java:1352)
+	at org.apache.hadoop.hdfs.server.namenode.FSPermissionChecker.<init>(FSPermissionChecker.java:63)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getPermissionChecker(FSNamesystem.java:3099)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getBlockLocationsUpdateTimes(FSNamesystem.java:1471)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getBlockLocationsInt(FSNamesystem.java:1448)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getBlockLocations(FSNamesystem.java:1428)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getBlockLocations(FSNamesystem.java:1402)
+	at org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.getBlockLocations(NameNodeRpcServer.java:468)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolServerSideTranslatorPB.getBlockLocations(ClientNamenodeProtocolServerSideTranslatorPB.java:269)
+	at org.apache.hadoop.hdfs.protocol.proto.ClientNamenodeProtocolProtos$ClientNamenodeProtocol$2.callBlockingMethod(ClientNamenodeProtocolProtos.java:59566)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:585)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:928)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2048)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2044)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:394)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1491)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2042)
+2014-04-06 17:13:53,394 WARN org.apache.hadoop.security.UserGroupInformation: No groups available for user dr.who
+2014-04-06 17:13:53,424 WARN org.apache.hadoop.security.ShellBasedUnixGroupsMapping: got exception trying to get groups for user dr.who
+org.apache.hadoop.util.Shell$ExitCodeException: id: dr.who: no such user
+
+	at org.apache.hadoop.util.Shell.runCommand(Shell.java:464)
+	at org.apache.hadoop.util.Shell.run(Shell.java:379)
+	at org.apache.hadoop.util.Shell$ShellCommandExecutor.execute(Shell.java:589)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:678)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:661)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getUnixGroups(ShellBasedUnixGroupsMapping.java:83)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getGroups(ShellBasedUnixGroupsMapping.java:52)
+	at org.apache.hadoop.security.JniBasedUnixGroupsMappingWithFallback.getGroups(JniBasedUnixGroupsMappingWithFallback.java:50)
+	at org.apache.hadoop.security.Groups.getGroups(Groups.java:89)
+	at org.apache.hadoop.security.UserGroupInformation.getGroupNames(UserGroupInformation.java:1352)
+	at org.apache.hadoop.hdfs.server.namenode.FSPermissionChecker.<init>(FSPermissionChecker.java:63)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getPermissionChecker(FSNamesystem.java:3099)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getBlockLocationsUpdateTimes(FSNamesystem.java:1471)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getBlockLocationsInt(FSNamesystem.java:1448)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getBlockLocations(FSNamesystem.java:1428)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getBlockLocations(FSNamesystem.java:1402)
+	at org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.getBlockLocations(NameNodeRpcServer.java:468)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolServerSideTranslatorPB.getBlockLocations(ClientNamenodeProtocolServerSideTranslatorPB.java:269)
+	at org.apache.hadoop.hdfs.protocol.proto.ClientNamenodeProtocolProtos$ClientNamenodeProtocol$2.callBlockingMethod(ClientNamenodeProtocolProtos.java:59566)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:585)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:928)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2048)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2044)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:394)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1491)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2042)
+2014-04-06 17:13:53,424 WARN org.apache.hadoop.security.UserGroupInformation: No groups available for user dr.who
+2014-04-06 17:13:53,446 WARN org.apache.hadoop.security.ShellBasedUnixGroupsMapping: got exception trying to get groups for user dr.who
+org.apache.hadoop.util.Shell$ExitCodeException: id: dr.who: no such user
+
+	at org.apache.hadoop.util.Shell.runCommand(Shell.java:464)
+	at org.apache.hadoop.util.Shell.run(Shell.java:379)
+	at org.apache.hadoop.util.Shell$ShellCommandExecutor.execute(Shell.java:589)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:678)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:661)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getUnixGroups(ShellBasedUnixGroupsMapping.java:83)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getGroups(ShellBasedUnixGroupsMapping.java:52)
+	at org.apache.hadoop.security.JniBasedUnixGroupsMappingWithFallback.getGroups(JniBasedUnixGroupsMappingWithFallback.java:50)
+	at org.apache.hadoop.security.Groups.getGroups(Groups.java:89)
+	at org.apache.hadoop.security.UserGroupInformation.getGroupNames(UserGroupInformation.java:1352)
+	at org.apache.hadoop.hdfs.server.namenode.FSPermissionChecker.<init>(FSPermissionChecker.java:63)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getPermissionChecker(FSNamesystem.java:3099)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getBlockLocationsUpdateTimes(FSNamesystem.java:1471)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getBlockLocationsInt(FSNamesystem.java:1448)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getBlockLocations(FSNamesystem.java:1428)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getBlockLocations(FSNamesystem.java:1402)
+	at org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.getBlockLocations(NameNodeRpcServer.java:468)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolServerSideTranslatorPB.getBlockLocations(ClientNamenodeProtocolServerSideTranslatorPB.java:269)
+	at org.apache.hadoop.hdfs.protocol.proto.ClientNamenodeProtocolProtos$ClientNamenodeProtocol$2.callBlockingMethod(ClientNamenodeProtocolProtos.java:59566)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:585)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:928)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2048)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2044)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:394)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1491)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2042)
+2014-04-06 17:13:53,447 WARN org.apache.hadoop.security.UserGroupInformation: No groups available for user dr.who
+2014-04-06 17:13:53,476 WARN org.apache.hadoop.security.ShellBasedUnixGroupsMapping: got exception trying to get groups for user dr.who
+org.apache.hadoop.util.Shell$ExitCodeException: id: dr.who: no such user
+
+	at org.apache.hadoop.util.Shell.runCommand(Shell.java:464)
+	at org.apache.hadoop.util.Shell.run(Shell.java:379)
+	at org.apache.hadoop.util.Shell$ShellCommandExecutor.execute(Shell.java:589)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:678)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:661)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getUnixGroups(ShellBasedUnixGroupsMapping.java:83)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getGroups(ShellBasedUnixGroupsMapping.java:52)
+	at org.apache.hadoop.security.JniBasedUnixGroupsMappingWithFallback.getGroups(JniBasedUnixGroupsMappingWithFallback.java:50)
+	at org.apache.hadoop.security.Groups.getGroups(Groups.java:89)
+	at org.apache.hadoop.security.UserGroupInformation.getGroupNames(UserGroupInformation.java:1352)
+	at org.apache.hadoop.hdfs.server.namenode.FSPermissionChecker.<init>(FSPermissionChecker.java:63)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getPermissionChecker(FSNamesystem.java:3099)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getBlockLocationsUpdateTimes(FSNamesystem.java:1471)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getBlockLocationsInt(FSNamesystem.java:1448)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getBlockLocations(FSNamesystem.java:1428)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getBlockLocations(FSNamesystem.java:1402)
+	at org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.getBlockLocations(NameNodeRpcServer.java:468)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolServerSideTranslatorPB.getBlockLocations(ClientNamenodeProtocolServerSideTranslatorPB.java:269)
+	at org.apache.hadoop.hdfs.protocol.proto.ClientNamenodeProtocolProtos$ClientNamenodeProtocol$2.callBlockingMethod(ClientNamenodeProtocolProtos.java:59566)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:585)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:928)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2048)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2044)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:394)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1491)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2042)
+2014-04-06 17:13:53,477 WARN org.apache.hadoop.security.UserGroupInformation: No groups available for user dr.who
+2014-04-06 17:13:56,477 WARN org.apache.hadoop.security.ShellBasedUnixGroupsMapping: got exception trying to get groups for user dr.who
+org.apache.hadoop.util.Shell$ExitCodeException: id: dr.who: no such user
+
+	at org.apache.hadoop.util.Shell.runCommand(Shell.java:464)
+	at org.apache.hadoop.util.Shell.run(Shell.java:379)
+	at org.apache.hadoop.util.Shell$ShellCommandExecutor.execute(Shell.java:589)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:678)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:661)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getUnixGroups(ShellBasedUnixGroupsMapping.java:83)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getGroups(ShellBasedUnixGroupsMapping.java:52)
+	at org.apache.hadoop.security.JniBasedUnixGroupsMappingWithFallback.getGroups(JniBasedUnixGroupsMappingWithFallback.java:50)
+	at org.apache.hadoop.security.Groups.getGroups(Groups.java:89)
+	at org.apache.hadoop.security.UserGroupInformation.getGroupNames(UserGroupInformation.java:1352)
+	at org.apache.hadoop.hdfs.server.namenode.FSPermissionChecker.<init>(FSPermissionChecker.java:63)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getPermissionChecker(FSNamesystem.java:3099)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getFileInfo(FSNamesystem.java:3274)
+	at org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.getFileInfo(NameNodeRpcServer.java:749)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolServerSideTranslatorPB.getFileInfo(ClientNamenodeProtocolServerSideTranslatorPB.java:692)
+	at org.apache.hadoop.hdfs.protocol.proto.ClientNamenodeProtocolProtos$ClientNamenodeProtocol$2.callBlockingMethod(ClientNamenodeProtocolProtos.java:59628)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:585)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:928)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2048)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2044)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:394)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1491)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2042)
+2014-04-06 17:13:56,478 WARN org.apache.hadoop.security.UserGroupInformation: No groups available for user dr.who
+2014-04-06 17:13:56,500 WARN org.apache.hadoop.security.ShellBasedUnixGroupsMapping: got exception trying to get groups for user dr.who
+org.apache.hadoop.util.Shell$ExitCodeException: id: dr.who: no such user
+
+	at org.apache.hadoop.util.Shell.runCommand(Shell.java:464)
+	at org.apache.hadoop.util.Shell.run(Shell.java:379)
+	at org.apache.hadoop.util.Shell$ShellCommandExecutor.execute(Shell.java:589)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:678)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:661)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getUnixGroups(ShellBasedUnixGroupsMapping.java:83)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getGroups(ShellBasedUnixGroupsMapping.java:52)
+	at org.apache.hadoop.security.JniBasedUnixGroupsMappingWithFallback.getGroups(JniBasedUnixGroupsMappingWithFallback.java:50)
+	at org.apache.hadoop.security.Groups.getGroups(Groups.java:89)
+	at org.apache.hadoop.security.UserGroupInformation.getGroupNames(UserGroupInformation.java:1352)
+	at org.apache.hadoop.hdfs.server.namenode.FSPermissionChecker.<init>(FSPermissionChecker.java:63)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getPermissionChecker(FSNamesystem.java:3099)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getListingInt(FSNamesystem.java:3875)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getListing(FSNamesystem.java:3864)
+	at org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.getListing(NameNodeRpcServer.java:737)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolServerSideTranslatorPB.getListing(ClientNamenodeProtocolServerSideTranslatorPB.java:514)
+	at org.apache.hadoop.hdfs.protocol.proto.ClientNamenodeProtocolProtos$ClientNamenodeProtocol$2.callBlockingMethod(ClientNamenodeProtocolProtos.java:59600)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:585)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:928)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2048)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2044)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:394)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1491)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2042)
+2014-04-06 17:13:56,500 WARN org.apache.hadoop.security.UserGroupInformation: No groups available for user dr.who
+2014-04-06 17:14:36,736 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* allocateBlock: /k/_temporary/0/_temporary/attempt_local257427095_0001_r_000000_0/part-00000. BP-227790035-192.168.1.3-1396137359197 blk_1073741830_1006{blockUCState=UNDER_CONSTRUCTION, primaryNodeIndex=-1, replicas=[ReplicaUnderConstruction[127.0.0.1:50010|RBW]]}
+2014-04-06 17:14:36,817 INFO BlockStateChange: BLOCK* addStoredBlock: blockMap updated: 127.0.0.1:50010 is added to blk_1073741830_1006{blockUCState=UNDER_CONSTRUCTION, primaryNodeIndex=-1, replicas=[ReplicaUnderConstruction[127.0.0.1:50010|RBW]]} size 0
+2014-04-06 17:14:36,823 INFO org.apache.hadoop.hdfs.StateChange: DIR* completeFile: /k/_temporary/0/_temporary/attempt_local257427095_0001_r_000000_0/part-00000 is closed by DFSClient_NONMAPREDUCE_1734826870_1
+2014-04-06 17:14:36,867 INFO org.apache.hadoop.hdfs.StateChange: DIR* completeFile: /k/_SUCCESS is closed by DFSClient_NONMAPREDUCE_1734826870_1
+2014-04-06 17:14:43,601 WARN org.apache.hadoop.security.ShellBasedUnixGroupsMapping: got exception trying to get groups for user dr.who
+org.apache.hadoop.util.Shell$ExitCodeException: id: dr.who: no such user
+
+	at org.apache.hadoop.util.Shell.runCommand(Shell.java:464)
+	at org.apache.hadoop.util.Shell.run(Shell.java:379)
+	at org.apache.hadoop.util.Shell$ShellCommandExecutor.execute(Shell.java:589)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:678)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:661)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getUnixGroups(ShellBasedUnixGroupsMapping.java:83)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getGroups(ShellBasedUnixGroupsMapping.java:52)
+	at org.apache.hadoop.security.JniBasedUnixGroupsMappingWithFallback.getGroups(JniBasedUnixGroupsMappingWithFallback.java:50)
+	at org.apache.hadoop.security.Groups.getGroups(Groups.java:89)
+	at org.apache.hadoop.security.UserGroupInformation.getGroupNames(UserGroupInformation.java:1352)
+	at org.apache.hadoop.hdfs.server.namenode.FSPermissionChecker.<init>(FSPermissionChecker.java:63)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getPermissionChecker(FSNamesystem.java:3099)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getFileInfo(FSNamesystem.java:3274)
+	at org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.getFileInfo(NameNodeRpcServer.java:749)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolServerSideTranslatorPB.getFileInfo(ClientNamenodeProtocolServerSideTranslatorPB.java:692)
+	at org.apache.hadoop.hdfs.protocol.proto.ClientNamenodeProtocolProtos$ClientNamenodeProtocol$2.callBlockingMethod(ClientNamenodeProtocolProtos.java:59628)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:585)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:928)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2048)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2044)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:394)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1491)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2042)
+2014-04-06 17:14:43,601 WARN org.apache.hadoop.security.UserGroupInformation: No groups available for user dr.who
+2014-04-06 17:14:43,624 WARN org.apache.hadoop.security.ShellBasedUnixGroupsMapping: got exception trying to get groups for user dr.who
+org.apache.hadoop.util.Shell$ExitCodeException: id: dr.who: no such user
+
+	at org.apache.hadoop.util.Shell.runCommand(Shell.java:464)
+	at org.apache.hadoop.util.Shell.run(Shell.java:379)
+	at org.apache.hadoop.util.Shell$ShellCommandExecutor.execute(Shell.java:589)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:678)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:661)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getUnixGroups(ShellBasedUnixGroupsMapping.java:83)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getGroups(ShellBasedUnixGroupsMapping.java:52)
+	at org.apache.hadoop.security.JniBasedUnixGroupsMappingWithFallback.getGroups(JniBasedUnixGroupsMappingWithFallback.java:50)
+	at org.apache.hadoop.security.Groups.getGroups(Groups.java:89)
+	at org.apache.hadoop.security.UserGroupInformation.getGroupNames(UserGroupInformation.java:1352)
+	at org.apache.hadoop.hdfs.server.namenode.FSPermissionChecker.<init>(FSPermissionChecker.java:63)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getPermissionChecker(FSNamesystem.java:3099)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getListingInt(FSNamesystem.java:3875)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getListing(FSNamesystem.java:3864)
+	at org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.getListing(NameNodeRpcServer.java:737)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolServerSideTranslatorPB.getListing(ClientNamenodeProtocolServerSideTranslatorPB.java:514)
+	at org.apache.hadoop.hdfs.protocol.proto.ClientNamenodeProtocolProtos$ClientNamenodeProtocol$2.callBlockingMethod(ClientNamenodeProtocolProtos.java:59600)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:585)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:928)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2048)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2044)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:394)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1491)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2042)
+2014-04-06 17:14:43,624 WARN org.apache.hadoop.security.UserGroupInformation: No groups available for user dr.who
+2014-04-06 17:14:51,326 WARN org.apache.hadoop.security.ShellBasedUnixGroupsMapping: got exception trying to get groups for user dr.who
+org.apache.hadoop.util.Shell$ExitCodeException: id: dr.who: no such user
+
+	at org.apache.hadoop.util.Shell.runCommand(Shell.java:464)
+	at org.apache.hadoop.util.Shell.run(Shell.java:379)
+	at org.apache.hadoop.util.Shell$ShellCommandExecutor.execute(Shell.java:589)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:678)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:661)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getUnixGroups(ShellBasedUnixGroupsMapping.java:83)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getGroups(ShellBasedUnixGroupsMapping.java:52)
+	at org.apache.hadoop.security.JniBasedUnixGroupsMappingWithFallback.getGroups(JniBasedUnixGroupsMappingWithFallback.java:50)
+	at org.apache.hadoop.security.Groups.getGroups(Groups.java:89)
+	at org.apache.hadoop.security.UserGroupInformation.getGroupNames(UserGroupInformation.java:1352)
+	at org.apache.hadoop.hdfs.server.namenode.FSPermissionChecker.<init>(FSPermissionChecker.java:63)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getPermissionChecker(FSNamesystem.java:3099)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getFileInfo(FSNamesystem.java:3274)
+	at org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.getFileInfo(NameNodeRpcServer.java:749)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolServerSideTranslatorPB.getFileInfo(ClientNamenodeProtocolServerSideTranslatorPB.java:692)
+	at org.apache.hadoop.hdfs.protocol.proto.ClientNamenodeProtocolProtos$ClientNamenodeProtocol$2.callBlockingMethod(ClientNamenodeProtocolProtos.java:59628)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:585)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:928)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2048)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2044)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:394)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1491)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2042)
+2014-04-06 17:14:51,327 WARN org.apache.hadoop.security.UserGroupInformation: No groups available for user dr.who
+2014-04-06 17:14:51,348 WARN org.apache.hadoop.security.ShellBasedUnixGroupsMapping: got exception trying to get groups for user dr.who
+org.apache.hadoop.util.Shell$ExitCodeException: id: dr.who: no such user
+
+	at org.apache.hadoop.util.Shell.runCommand(Shell.java:464)
+	at org.apache.hadoop.util.Shell.run(Shell.java:379)
+	at org.apache.hadoop.util.Shell$ShellCommandExecutor.execute(Shell.java:589)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:678)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:661)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getUnixGroups(ShellBasedUnixGroupsMapping.java:83)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getGroups(ShellBasedUnixGroupsMapping.java:52)
+	at org.apache.hadoop.security.JniBasedUnixGroupsMappingWithFallback.getGroups(JniBasedUnixGroupsMappingWithFallback.java:50)
+	at org.apache.hadoop.security.Groups.getGroups(Groups.java:89)
+	at org.apache.hadoop.security.UserGroupInformation.getGroupNames(UserGroupInformation.java:1352)
+	at org.apache.hadoop.hdfs.server.namenode.FSPermissionChecker.<init>(FSPermissionChecker.java:63)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getPermissionChecker(FSNamesystem.java:3099)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getListingInt(FSNamesystem.java:3875)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getListing(FSNamesystem.java:3864)
+	at org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.getListing(NameNodeRpcServer.java:737)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolServerSideTranslatorPB.getListing(ClientNamenodeProtocolServerSideTranslatorPB.java:514)
+	at org.apache.hadoop.hdfs.protocol.proto.ClientNamenodeProtocolProtos$ClientNamenodeProtocol$2.callBlockingMethod(ClientNamenodeProtocolProtos.java:59600)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:585)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:928)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2048)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2044)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:394)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1491)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2042)
+2014-04-06 17:14:51,348 WARN org.apache.hadoop.security.UserGroupInformation: No groups available for user dr.who
+2014-04-06 17:14:54,530 WARN org.apache.hadoop.security.ShellBasedUnixGroupsMapping: got exception trying to get groups for user dr.who
+org.apache.hadoop.util.Shell$ExitCodeException: id: dr.who: no such user
+
+	at org.apache.hadoop.util.Shell.runCommand(Shell.java:464)
+	at org.apache.hadoop.util.Shell.run(Shell.java:379)
+	at org.apache.hadoop.util.Shell$ShellCommandExecutor.execute(Shell.java:589)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:678)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:661)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getUnixGroups(ShellBasedUnixGroupsMapping.java:83)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getGroups(ShellBasedUnixGroupsMapping.java:52)
+	at org.apache.hadoop.security.JniBasedUnixGroupsMappingWithFallback.getGroups(JniBasedUnixGroupsMappingWithFallback.java:50)
+	at org.apache.hadoop.security.Groups.getGroups(Groups.java:89)
+	at org.apache.hadoop.security.UserGroupInformation.getGroupNames(UserGroupInformation.java:1352)
+	at org.apache.hadoop.hdfs.server.namenode.FSPermissionChecker.<init>(FSPermissionChecker.java:63)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getPermissionChecker(FSNamesystem.java:3099)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getFileInfo(FSNamesystem.java:3274)
+	at org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.getFileInfo(NameNodeRpcServer.java:749)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolServerSideTranslatorPB.getFileInfo(ClientNamenodeProtocolServerSideTranslatorPB.java:692)
+	at org.apache.hadoop.hdfs.protocol.proto.ClientNamenodeProtocolProtos$ClientNamenodeProtocol$2.callBlockingMethod(ClientNamenodeProtocolProtos.java:59628)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:585)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:928)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2048)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2044)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:394)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1491)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2042)
+2014-04-06 17:14:54,530 WARN org.apache.hadoop.security.UserGroupInformation: No groups available for user dr.who
+2014-04-06 17:14:54,554 WARN org.apache.hadoop.security.ShellBasedUnixGroupsMapping: got exception trying to get groups for user dr.who
+org.apache.hadoop.util.Shell$ExitCodeException: id: dr.who: no such user
+
+	at org.apache.hadoop.util.Shell.runCommand(Shell.java:464)
+	at org.apache.hadoop.util.Shell.run(Shell.java:379)
+	at org.apache.hadoop.util.Shell$ShellCommandExecutor.execute(Shell.java:589)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:678)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:661)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getUnixGroups(ShellBasedUnixGroupsMapping.java:83)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getGroups(ShellBasedUnixGroupsMapping.java:52)
+	at org.apache.hadoop.security.JniBasedUnixGroupsMappingWithFallback.getGroups(JniBasedUnixGroupsMappingWithFallback.java:50)
+	at org.apache.hadoop.security.Groups.getGroups(Groups.java:89)
+	at org.apache.hadoop.security.UserGroupInformation.getGroupNames(UserGroupInformation.java:1352)
+	at org.apache.hadoop.hdfs.server.namenode.FSPermissionChecker.<init>(FSPermissionChecker.java:63)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getPermissionChecker(FSNamesystem.java:3099)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getBlockLocationsUpdateTimes(FSNamesystem.java:1471)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getBlockLocationsInt(FSNamesystem.java:1448)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getBlockLocations(FSNamesystem.java:1428)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getBlockLocations(FSNamesystem.java:1402)
+	at org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.getBlockLocations(NameNodeRpcServer.java:468)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolServerSideTranslatorPB.getBlockLocations(ClientNamenodeProtocolServerSideTranslatorPB.java:269)
+	at org.apache.hadoop.hdfs.protocol.proto.ClientNamenodeProtocolProtos$ClientNamenodeProtocol$2.callBlockingMethod(ClientNamenodeProtocolProtos.java:59566)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:585)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:928)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2048)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2044)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:394)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1491)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2042)
+2014-04-06 17:14:54,554 WARN org.apache.hadoop.security.UserGroupInformation: No groups available for user dr.who
+2014-04-06 17:14:54,585 WARN org.apache.hadoop.security.ShellBasedUnixGroupsMapping: got exception trying to get groups for user dr.who
+org.apache.hadoop.util.Shell$ExitCodeException: id: dr.who: no such user
+
+	at org.apache.hadoop.util.Shell.runCommand(Shell.java:464)
+	at org.apache.hadoop.util.Shell.run(Shell.java:379)
+	at org.apache.hadoop.util.Shell$ShellCommandExecutor.execute(Shell.java:589)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:678)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:661)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getUnixGroups(ShellBasedUnixGroupsMapping.java:83)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getGroups(ShellBasedUnixGroupsMapping.java:52)
+	at org.apache.hadoop.security.JniBasedUnixGroupsMappingWithFallback.getGroups(JniBasedUnixGroupsMappingWithFallback.java:50)
+	at org.apache.hadoop.security.Groups.getGroups(Groups.java:89)
+	at org.apache.hadoop.security.UserGroupInformation.getGroupNames(UserGroupInformation.java:1352)
+	at org.apache.hadoop.hdfs.server.namenode.FSPermissionChecker.<init>(FSPermissionChecker.java:63)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getPermissionChecker(FSNamesystem.java:3099)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getBlockLocationsUpdateTimes(FSNamesystem.java:1471)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getBlockLocationsInt(FSNamesystem.java:1448)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getBlockLocations(FSNamesystem.java:1428)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getBlockLocations(FSNamesystem.java:1402)
+	at org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.getBlockLocations(NameNodeRpcServer.java:468)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolServerSideTranslatorPB.getBlockLocations(ClientNamenodeProtocolServerSideTranslatorPB.java:269)
+	at org.apache.hadoop.hdfs.protocol.proto.ClientNamenodeProtocolProtos$ClientNamenodeProtocol$2.callBlockingMethod(ClientNamenodeProtocolProtos.java:59566)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:585)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:928)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2048)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2044)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:394)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1491)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2042)
+2014-04-06 17:14:54,586 WARN org.apache.hadoop.security.UserGroupInformation: No groups available for user dr.who
+2014-04-06 17:14:54,609 WARN org.apache.hadoop.security.ShellBasedUnixGroupsMapping: got exception trying to get groups for user dr.who
+org.apache.hadoop.util.Shell$ExitCodeException: id: dr.who: no such user
+
+	at org.apache.hadoop.util.Shell.runCommand(Shell.java:464)
+	at org.apache.hadoop.util.Shell.run(Shell.java:379)
+	at org.apache.hadoop.util.Shell$ShellCommandExecutor.execute(Shell.java:589)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:678)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:661)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getUnixGroups(ShellBasedUnixGroupsMapping.java:83)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getGroups(ShellBasedUnixGroupsMapping.java:52)
+	at org.apache.hadoop.security.JniBasedUnixGroupsMappingWithFallback.getGroups(JniBasedUnixGroupsMappingWithFallback.java:50)
+	at org.apache.hadoop.security.Groups.getGroups(Groups.java:89)
+	at org.apache.hadoop.security.UserGroupInformation.getGroupNames(UserGroupInformation.java:1352)
+	at org.apache.hadoop.hdfs.server.namenode.FSPermissionChecker.<init>(FSPermissionChecker.java:63)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getPermissionChecker(FSNamesystem.java:3099)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getBlockLocationsUpdateTimes(FSNamesystem.java:1471)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getBlockLocationsInt(FSNamesystem.java:1448)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getBlockLocations(FSNamesystem.java:1428)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getBlockLocations(FSNamesystem.java:1402)
+	at org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.getBlockLocations(NameNodeRpcServer.java:468)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolServerSideTranslatorPB.getBlockLocations(ClientNamenodeProtocolServerSideTranslatorPB.java:269)
+	at org.apache.hadoop.hdfs.protocol.proto.ClientNamenodeProtocolProtos$ClientNamenodeProtocol$2.callBlockingMethod(ClientNamenodeProtocolProtos.java:59566)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:585)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:928)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2048)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2044)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:394)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1491)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2042)
+2014-04-06 17:14:54,609 WARN org.apache.hadoop.security.UserGroupInformation: No groups available for user dr.who
+2014-04-06 17:14:54,640 WARN org.apache.hadoop.security.ShellBasedUnixGroupsMapping: got exception trying to get groups for user dr.who
+org.apache.hadoop.util.Shell$ExitCodeException: id: dr.who: no such user
+
+	at org.apache.hadoop.util.Shell.runCommand(Shell.java:464)
+	at org.apache.hadoop.util.Shell.run(Shell.java:379)
+	at org.apache.hadoop.util.Shell$ShellCommandExecutor.execute(Shell.java:589)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:678)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:661)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getUnixGroups(ShellBasedUnixGroupsMapping.java:83)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getGroups(ShellBasedUnixGroupsMapping.java:52)
+	at org.apache.hadoop.security.JniBasedUnixGroupsMappingWithFallback.getGroups(JniBasedUnixGroupsMappingWithFallback.java:50)
+	at org.apache.hadoop.security.Groups.getGroups(Groups.java:89)
+	at org.apache.hadoop.security.UserGroupInformation.getGroupNames(UserGroupInformation.java:1352)
+	at org.apache.hadoop.hdfs.server.namenode.FSPermissionChecker.<init>(FSPermissionChecker.java:63)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getPermissionChecker(FSNamesystem.java:3099)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getBlockLocationsUpdateTimes(FSNamesystem.java:1471)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getBlockLocationsInt(FSNamesystem.java:1448)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getBlockLocations(FSNamesystem.java:1428)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getBlockLocations(FSNamesystem.java:1402)
+	at org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.getBlockLocations(NameNodeRpcServer.java:468)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolServerSideTranslatorPB.getBlockLocations(ClientNamenodeProtocolServerSideTranslatorPB.java:269)
+	at org.apache.hadoop.hdfs.protocol.proto.ClientNamenodeProtocolProtos$ClientNamenodeProtocol$2.callBlockingMethod(ClientNamenodeProtocolProtos.java:59566)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:585)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:928)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2048)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2044)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:394)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1491)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2042)
+2014-04-06 17:14:54,645 WARN org.apache.hadoop.security.UserGroupInformation: No groups available for user dr.who
+2014-04-06 17:14:54,674 WARN org.apache.hadoop.security.ShellBasedUnixGroupsMapping: got exception trying to get groups for user dr.who
+org.apache.hadoop.util.Shell$ExitCodeException: id: dr.who: no such user
+
+	at org.apache.hadoop.util.Shell.runCommand(Shell.java:464)
+	at org.apache.hadoop.util.Shell.run(Shell.java:379)
+	at org.apache.hadoop.util.Shell$ShellCommandExecutor.execute(Shell.java:589)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:678)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:661)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getUnixGroups(ShellBasedUnixGroupsMapping.java:83)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getGroups(ShellBasedUnixGroupsMapping.java:52)
+	at org.apache.hadoop.security.JniBasedUnixGroupsMappingWithFallback.getGroups(JniBasedUnixGroupsMappingWithFallback.java:50)
+	at org.apache.hadoop.security.Groups.getGroups(Groups.java:89)
+	at org.apache.hadoop.security.UserGroupInformation.getGroupNames(UserGroupInformation.java:1352)
+	at org.apache.hadoop.hdfs.server.namenode.FSPermissionChecker.<init>(FSPermissionChecker.java:63)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getPermissionChecker(FSNamesystem.java:3099)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getBlockLocationsUpdateTimes(FSNamesystem.java:1471)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getBlockLocationsInt(FSNamesystem.java:1448)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getBlockLocations(FSNamesystem.java:1428)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getBlockLocations(FSNamesystem.java:1402)
+	at org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.getBlockLocations(NameNodeRpcServer.java:468)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolServerSideTranslatorPB.getBlockLocations(ClientNamenodeProtocolServerSideTranslatorPB.java:269)
+	at org.apache.hadoop.hdfs.protocol.proto.ClientNamenodeProtocolProtos$ClientNamenodeProtocol$2.callBlockingMethod(ClientNamenodeProtocolProtos.java:59566)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:585)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:928)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2048)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2044)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:394)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1491)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2042)
+2014-04-06 17:14:54,674 WARN org.apache.hadoop.security.UserGroupInformation: No groups available for user dr.who
+2014-04-06 17:15:00,588 WARN org.apache.hadoop.security.ShellBasedUnixGroupsMapping: got exception trying to get groups for user dr.who
+org.apache.hadoop.util.Shell$ExitCodeException: id: dr.who: no such user
+
+	at org.apache.hadoop.util.Shell.runCommand(Shell.java:464)
+	at org.apache.hadoop.util.Shell.run(Shell.java:379)
+	at org.apache.hadoop.util.Shell$ShellCommandExecutor.execute(Shell.java:589)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:678)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:661)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getUnixGroups(ShellBasedUnixGroupsMapping.java:83)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getGroups(ShellBasedUnixGroupsMapping.java:52)
+	at org.apache.hadoop.security.JniBasedUnixGroupsMappingWithFallback.getGroups(JniBasedUnixGroupsMappingWithFallback.java:50)
+	at org.apache.hadoop.security.Groups.getGroups(Groups.java:89)
+	at org.apache.hadoop.security.UserGroupInformation.getGroupNames(UserGroupInformation.java:1352)
+	at org.apache.hadoop.hdfs.server.namenode.FSPermissionChecker.<init>(FSPermissionChecker.java:63)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getPermissionChecker(FSNamesystem.java:3099)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getFileInfo(FSNamesystem.java:3274)
+	at org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.getFileInfo(NameNodeRpcServer.java:749)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolServerSideTranslatorPB.getFileInfo(ClientNamenodeProtocolServerSideTranslatorPB.java:692)
+	at org.apache.hadoop.hdfs.protocol.proto.ClientNamenodeProtocolProtos$ClientNamenodeProtocol$2.callBlockingMethod(ClientNamenodeProtocolProtos.java:59628)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:585)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:928)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2048)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2044)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:394)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1491)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2042)
+2014-04-06 17:15:00,589 WARN org.apache.hadoop.security.UserGroupInformation: No groups available for user dr.who
+2014-04-06 17:15:00,610 WARN org.apache.hadoop.security.ShellBasedUnixGroupsMapping: got exception trying to get groups for user dr.who
+org.apache.hadoop.util.Shell$ExitCodeException: id: dr.who: no such user
+
+	at org.apache.hadoop.util.Shell.runCommand(Shell.java:464)
+	at org.apache.hadoop.util.Shell.run(Shell.java:379)
+	at org.apache.hadoop.util.Shell$ShellCommandExecutor.execute(Shell.java:589)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:678)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:661)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getUnixGroups(ShellBasedUnixGroupsMapping.java:83)
+	at org.apache.hadoop.security.ShellBasedUnixGroupsMapping.getGroups(ShellBasedUnixGroupsMapping.java:52)
+	at org.apache.hadoop.security.JniBasedUnixGroupsMappingWithFallback.getGroups(JniBasedUnixGroupsMappingWithFallback.java:50)
+	at org.apache.hadoop.security.Groups.getGroups(Groups.java:89)
+	at org.apache.hadoop.security.UserGroupInformation.getGroupNames(UserGroupInformation.java:1352)
+	at org.apache.hadoop.hdfs.server.namenode.FSPermissionChecker.<init>(FSPermissionChecker.java:63)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getPermissionChecker(FSNamesystem.java:3099)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getListingInt(FSNamesystem.java:3875)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getListing(FSNamesystem.java:3864)
+	at org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.getListing(NameNodeRpcServer.java:737)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolServerSideTranslatorPB.getListing(ClientNamenodeProtocolServerSideTranslatorPB.java:514)
+	at org.apache.hadoop.hdfs.protocol.proto.ClientNamenodeProtocolProtos$ClientNamenodeProtocol$2.callBlockingMethod(ClientNamenodeProtocolProtos.java:59600)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:585)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:928)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2048)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2044)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:394)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1491)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2042)
+2014-04-06 17:15:00,611 WARN org.apache.hadoop.security.UserGroupInformation: No groups available for user dr.who
+2014-04-06 17:15:23,954 INFO BlockStateChange: BLOCK* processReport: from DatanodeRegistration(127.0.0.1, storageID=DS-253677822-192.168.1.3-50010-1396137838001, infoPort=50075, ipcPort=50020, storageInfo=lv=-47;cid=CID-dff0cbae-ad32-43e7-8802-22dc664a3720;nsid=1171046181;c=0), blocks: 6, processing time: 2 msecs
+2014-04-06 18:07:57,182 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Roll Edit Log from 127.0.0.1
+2014-04-06 18:07:57,493 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Rolling edit logs
+2014-04-06 18:07:57,493 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Ending log segment 73
+2014-04-06 18:07:57,493 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Number of transactions: 35 Total time for transactions(ms): 3 Number of transactions batched in Syncs: 0 Number of syncs: 19 SyncTimes(ms): 39 
+2014-04-06 18:07:57,496 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Number of transactions: 35 Total time for transactions(ms): 3 Number of transactions batched in Syncs: 0 Number of syncs: 20 SyncTimes(ms): 41 
+2014-04-06 18:07:57,497 INFO org.apache.hadoop.hdfs.server.namenode.FileJournalManager: Finalizing edits file /Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/hdfs/name/current/edits_inprogress_0000000000000000073 -> /Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/hdfs/name/current/edits_0000000000000000073-0000000000000000107
+2014-04-06 18:07:57,505 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Starting log segment at 108
+2014-04-06 18:07:57,561 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Opening connection to http://localhost:50090/getimage?getimage=1&txid=107&storageInfo=-47:1171046181:0:CID-dff0cbae-ad32-43e7-8802-22dc664a3720
+2014-04-06 18:07:57,565 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Transfer took 0.00s at 500.00 KB/s
+2014-04-06 18:07:57,565 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Downloaded file fsimage.ckpt_0000000000000000107 size 2176 bytes.
+2014-04-06 18:07:57,567 INFO org.apache.hadoop.hdfs.server.namenode.NNStorageRetentionManager: Going to retain 2 images with txid >= 72
+2014-04-06 18:07:57,567 INFO org.apache.hadoop.hdfs.server.namenode.NNStorageRetentionManager: Purging old image FSImageFile(file=/Users/prateek/UT-classes/Distributed-Computing/Assignment3/hadoop-2.2.0/hdfs/name/current/fsimage_0000000000000000070, cpktTxId=0000000000000000070)

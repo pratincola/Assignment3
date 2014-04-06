@@ -2,6 +2,8 @@
  * Created by prateek on 3/29/14.
  */
 
+import java.io.BufferedReader;
+import java.io.FileReader;
 import java.io.IOException;
 import java.util.*;
 
@@ -14,14 +16,29 @@ import org.apache.hadoop.util.*;
 
 public class WordCount {
 
+    static boolean caseSensitive = false;
+    static boolean patternSkipping = true;
+    public static Hashtable queryWord = new Hashtable();
+
+
     public static class Map extends MapReduceBase implements Mapper<LongWritable, Text, Text, IntWritable> {
         private final static IntWritable one = new IntWritable(1);
         private Text word = new Text();
 
+
         public void map(LongWritable key, Text value, OutputCollector<Text, IntWritable> output, Reporter reporter) throws IOException {
-            String line = value.toString();
+            String line = (caseSensitive) ? value.toString() : value.toString().toLowerCase();
+
+            if(patternSkipping){
+                line = line.replaceAll("[^\\w\\s]","");
+            }
+
             StringTokenizer tokenizer = new StringTokenizer(line);
             while (tokenizer.hasMoreTokens()) {
+                while(queryWord.keySet().iterator().hasNext()){
+                    System.out.print("poop");
+                }
+
                 word.set(tokenizer.nextToken());
                 output.collect(word, one);
             }
@@ -37,20 +54,6 @@ public class WordCount {
             output.collect(key, new IntWritable(sum));
         }
     }
-
-    private boolean caseSensitive = true;
-    private String inputFile;
-
-    public void configure(JobConf job) {
-        caseSensitive = job.getBoolean("analyzer.case.sensitive", true);
-        inputFile = job.get("map.input.file");
-        Set<String> patternsToSkip = new HashSet<String>();
-        patternsToSkip.add("\\.");
-        patternsToSkip.add("\\,");
-        patternsToSkip.add("\\!");
-//        patternsToSkip.add("\"");
-    }
-
 
 
     public static void main(String[] args) throws Exception {
@@ -68,7 +71,24 @@ public class WordCount {
         conf.setOutputFormat(TextOutputFormat.class);
 
         FileInputFormat.setInputPaths(conf, new Path(args[0]));
+
         FileOutputFormat.setOutputPath(conf, new Path(args[1]));
+
+        BufferedReader reader = new BufferedReader(new FileReader(args[2]));
+
+        boolean t = true;
+        while(t){
+
+            String [] words = reader.readLine().split(" ");
+
+            if(words.equals(null)){
+                t = false;
+            }
+            else{
+                queryWord.put(words[0], words[1]);
+            }
+        }
+
 
         // Disregard special characters
         conf.setBoolean("analyzer.skip.patterns", true);
