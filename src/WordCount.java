@@ -38,7 +38,8 @@ public class WordCount {
             int queryCurrentCount = 0;
 
             if(patternSkipping){
-                line = line.replaceAll("[^\\w\\s]","");
+                line = line.replaceAll("[^\\w\\s]"," ");
+                //line = line.replaceAll("'", " ");
             }
 
             StringTokenizer tokenizer = new StringTokenizer(line);
