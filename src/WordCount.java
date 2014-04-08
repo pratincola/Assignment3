@@ -30,6 +30,7 @@ public class WordCount {
 
     public static class Map extends MapReduceBase implements Mapper<LongWritable, Text, Text, IntWritable> {
         private final static IntWritable one = new IntWritable(1);
+        private static String currentContextWord;
         private Text word = new Text();
 
 
@@ -49,10 +50,10 @@ public class WordCount {
                 String nextWord = tokenizer.nextToken();
                 while(queryWordIterator.hasNext()){
                     Entry<String,String> entry = (Entry<String,String>)queryWordIterator.next();
-
+                    currentContextWord = entry.getKey().replaceAll("\\d","");
 //                    System.out.println(nextWord + " : entry key " + entry.getKey() + " " + entry.getValue() );
 
-                    if (entry.getKey().equals(nextWord) && (contextWordDetected.get(entry.getKey()) == false)) {
+                    if (currentContextWord.equals(nextWord) && (contextWordDetected.get(entry.getKey()) == false)) {
                         contextWordDetected.put(entry.getKey(), true);
                         queryCurrentCount = queryBeforeContext.get(entry.getKey());
                         queryBeforeContext.put(entry.getKey(), 0);
@@ -92,7 +93,7 @@ public class WordCount {
                     else
                         one.set(0);
 
-                    word.set(entry.getKey() + " " + entry.getValue());
+                    word.set(currentContextWord + " " + entry.getValue());
 //                    word.set(nextWord);
                     output.collect(word, one);
 
@@ -142,14 +143,17 @@ public class WordCount {
         BufferedReader reader = new BufferedReader(new FileReader(args[2]));
 
         String words;
+        int i = 0;
         // TODO: Take care of line feed at the end of the file
         while((words = reader.readLine())!= null ){
             String [] word = words.split(" ") ;
-            queryWord.put(word[0].toLowerCase(),word[1].toLowerCase());
-            contextWordDetected.put(word[0].toLowerCase(), false);
-            contextWordDetectedFalser.put(word[0].toLowerCase(), false);
-            queryBeforeContext.put(word[0].toLowerCase(), 0);
-            queryBeforeContextFalser.put(word[0].toLowerCase(), 0);
+            queryWord.put(word[0].toLowerCase() + String.valueOf(i),word[1].toLowerCase());
+            contextWordDetected.put(word[0].toLowerCase() + String.valueOf(i), false);
+            contextWordDetectedFalser.put(word[0].toLowerCase() + String.valueOf(i), false);
+            queryBeforeContext.put(word[0].toLowerCase() + String.valueOf(i), 0);
+            queryBeforeContextFalser.put(word[0].toLowerCase() + String.valueOf(i), 0);
+
+            i++;
         }
 
         //Create a global Set and Iterator so that all Map nodes have access to the contents of the hashtable
