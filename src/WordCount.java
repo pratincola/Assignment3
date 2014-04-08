@@ -39,10 +39,13 @@ public class WordCount {
                 line = line.replaceAll("[^\\w\\s]","");
             }
 
-            StringTokenizer tokenizer = new StringTokenizer(line);
+
             //Start the actual calculation phase
             while (queryWordIterator.hasNext()) {
                 Entry<String,String> entry = (Entry<String,String>)queryWordIterator.next();
+                //We need to create a new tokenizer on each iteration
+                //Reusing the old tokenizer will make the token point to NULL
+                StringTokenizer tokenizer = new StringTokenizer(line);
 
                 while (tokenizer.hasMoreTokens()) {
                     String nextWord = tokenizer.nextToken();
