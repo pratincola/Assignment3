@@ -19,7 +19,10 @@ public class WordCount {
 
     static boolean caseSensitive = false;
     static boolean patternSkipping = true;
-    private static boolean contextWordDetected = false;
+    static Hashtable<String, Boolean> contextWordDetected = new Hashtable();
+    static Hashtable<String, Boolean> contextWordDetectedFalser = new Hashtable();
+    static Hashtable<String, Integer> queryBeforeContext = new Hashtable();
+    static Hashtable<String, Integer> queryBeforeContextFalser = new Hashtable();
     private static Hashtable queryWord = new Hashtable();
     private static Set queryWordSet;
     private static Iterator queryWordIterator;
@@ -32,7 +35,6 @@ public class WordCount {
 
         public void map(LongWritable key, Text value, OutputCollector<Text, IntWritable> output, Reporter reporter) throws IOException {
             String line = (caseSensitive) ? value.toString() : value.toString().toLowerCase();
-            int queryBeforeContext = 0;     //We will use this to keep track of queryword occurrences before the appearance of the contextword
             int queryCurrentCount = 0;
 
             if(patternSkipping){
@@ -46,18 +48,21 @@ public class WordCount {
                 String nextWord = tokenizer.nextToken();
                 while(queryWordIterator.hasNext()){
                     Entry<String,String> entry = (Entry<String,String>)queryWordIterator.next();
-                    System.out.println("token " + nextWord + " entry key " + entry.getKey() + " " + entry.getValue() );
+
+                    System.out.println(nextWord + " : entry key " + entry.getKey() + " " + entry.getValue() );
 
                     if (entry.getKey().equals(nextWord)) {
-                        contextWordDetected = true;
-                        queryCurrentCount = queryBeforeContext;
+                        contextWordDetected.put(entry.getKey(), true);
+                        queryCurrentCount = queryBeforeContext.get(entry.getKey());
+//                        queryBeforeContext.put(entry.getKey(), 0);
+//                        queryCurrentCount = queryBeforeContext;
                         //Reset the querywords before contextword counter, in case of repeated contextword matches
-                        queryBeforeContext = 0;
+//                        queryBeforeContext = 0;
                         System.out.println("Found context word: " + nextWord + " count: " + queryBeforeContext);
                     }
 
                     //We have an instance of the queryword, and we have detected the contextword
-                    else if (entry.getValue().equals(nextWord) && contextWordDetected) {
+                    else if (entry.getValue().equals(nextWord) && contextWordDetected.get(entry.getKey())) {
                         queryCurrentCount = queryCurrentCount + 1;
                         System.out.println("Found both context & query word: " + nextWord + " count: " +
                                 queryCurrentCount);
@@ -66,25 +71,38 @@ public class WordCount {
                     //We need to keep track of any querywords that appear before the contextword. If the contextword is
                     //found sometime later, we should still have an accurate count of how many times the queryword
                     //appeared in this line.
-                    else if (entry.getValue().equals(nextWord) && (contextWordDetected == false)) {
-                        queryBeforeContext = queryBeforeContext + 1;
+                    else if (entry.getValue().equals(nextWord) && (contextWordDetected.get(entry.getKey()) == false)) {
+                        Integer tmp = queryBeforeContext.get(entry.getKey()) + 1;
+                        queryBeforeContext.put(entry.getKey(), tmp);
+//                        queryCurrentCount += queryBeforeContext.get(entry.getKey());
+
+//                        queryBeforeContext = queryBeforeContext + 1;
+//                        queryCurrentCount += queryBeforeContext;
+
                         System.out.println("found query word before context " + nextWord + " count: " +
                                 queryBeforeContext);
                     }
-                    one.set(queryCurrentCount);
-                    word.set(entry.getKey() + " " + entry.getValue());
 
+                    if(contextWordDetected.get(entry.getKey())){
+                        one.set(queryCurrentCount);
+                        word.set(entry.getKey() + " " + entry.getValue());
 //                    word.set(nextWord);
-                    output.collect(word, one);
+                        output.collect(word, one);
 
-                    queryBeforeContext = 0;
+                    }
+
+
                     queryCurrentCount = 0;
 
                 }
-                contextWordDetected = false;
+
 
             }
+            queryBeforeContext.putAll(queryBeforeContextFalser);
+            contextWordDetected.putAll(contextWordDetectedFalser);
+
         }
+
     }
 
     public static class Reduce extends MapReduceBase implements Reducer<Text, IntWritable, Text, IntWritable> {
@@ -123,11 +141,17 @@ public class WordCount {
         while((words = reader.readLine())!= null ){
             String [] word = words.split(" ") ;
             queryWord.put(word[0].toLowerCase(),word[1].toLowerCase());
+            contextWordDetected.put(word[0].toLowerCase(), false);
+            contextWordDetectedFalser.put(word[0].toLowerCase(), false);
+            queryBeforeContext.put(word[0].toLowerCase(), 0);
+            queryBeforeContextFalser.put(word[0].toLowerCase(), 0);
         }
 
         //Create a global Set and Iterator so that all Map nodes have access to the contents of the hashtable
         queryWordSet = queryWord.entrySet();
         queryWordIterator = queryWordSet.iterator();
+
+
 
         // Disregard special characters
         conf.setBoolean("analyzer.skip.patterns", true);
