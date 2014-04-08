@@ -39,49 +39,18 @@ public class WordCount {
                 line = line.replaceAll("[^\\w\\s]","");
             }
 
+            StringTokenizer tokenizer = new StringTokenizer(line);
 
-            //Start the actual calculation phase
-            while (queryWordIterator.hasNext()) {
-                Entry<String,String> entry = (Entry<String,String>)queryWordIterator.next();
-                //We need to create a new tokenizer on each iteration
-                //Reusing the old tokenizer will make the token point to NULL
-                StringTokenizer tokenizer = new StringTokenizer(line);
-
-                while (tokenizer.hasMoreTokens()) {
-                    String nextWord = tokenizer.nextToken();
-                    //We have found the contextword. Set the detected flag to true
-                    if (entry.getKey().equals(nextWord)) {
-                        contextWordDetected = true;
-                        queryCurrentCount = queryBeforeContext;
-                        //Reset the querywords before contextword counter, in case of repeated contextword matches
-                        queryBeforeContext = 0;
-                    }
-                    //We have an instance of the queryword, and we have detected the contextword
-                    else if (entry.getValue().equals(nextWord) && contextWordDetected) {
-                        queryCurrentCount = queryCurrentCount + 1;
-                    }
-                    //We need to keep track of any querywords that appear before the contextword. If the contextword is
-                    //found sometime later, we should still have an accurate count of how many times the queryword
-                    //appeared in this line.
-                    else if (entry.getValue().equals(nextWord) && (contextWordDetected == false)) {
-                        queryBeforeContext = queryBeforeContext + 1;
-                    }
-
-                    //Set how many times we have found the queryword in this line
-                    one.set(queryCurrentCount);
-                    //The key for the reduce phase OutputCollector will be a concatenation of the contextword and queryword
-                    word.set(entry.getKey() + " " + entry.getValue());
-                    //Send to Reduce phase
-                    output.collect(word, one);
+            while (tokenizer.hasMoreTokens()) {
+                queryWordIterator = queryWordSet.iterator();
+                String nextWord = tokenizer.nextToken();
+                while(queryWordIterator.hasNext()){
+                    System.out.println(queryWordIterator.next());
                 }
 
-                //After we are finished with the reduce phase, we will need to reset all counters/flags, and
-                //go to the next contextword/queryword pairing
-                queryBeforeContext = 0;
-                queryCurrentCount = 0;
-                contextWordDetected = false;
+                word.set(nextWord);
+                output.collect(word, one);
             }
-
         }
     }
 
@@ -116,15 +85,11 @@ public class WordCount {
 
         BufferedReader reader = new BufferedReader(new FileReader(args[2]));
 
-        boolean t = true;
-        while(t){
-            String [] words = reader.readLine().split(" ");
-            if(words.equals(null)){
-                t = false;
-            }
-            else{
-                queryWord.put(words[0], words[1]);
-            }
+        String words;
+        // TODO: Take care of line feed at the end of the file
+        while((words = reader.readLine())!= null ){
+            String [] word = words.split(" ") ;
+            queryWord.put(word[0].toLowerCase(),word[1].toLowerCase());
         }
 
         //Create a global Set and Iterator so that all Map nodes have access to the contents of the hashtable
