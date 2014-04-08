@@ -49,23 +49,23 @@ public class WordCount {
                 while(queryWordIterator.hasNext()){
                     Entry<String,String> entry = (Entry<String,String>)queryWordIterator.next();
 
-                    System.out.println(nextWord + " : entry key " + entry.getKey() + " " + entry.getValue() );
+//                    System.out.println(nextWord + " : entry key " + entry.getKey() + " " + entry.getValue() );
 
-                    if (entry.getKey().equals(nextWord)) {
+                    if (entry.getKey().equals(nextWord) && (contextWordDetected.get(entry.getKey()) == false)) {
                         contextWordDetected.put(entry.getKey(), true);
                         queryCurrentCount = queryBeforeContext.get(entry.getKey());
-//                        queryBeforeContext.put(entry.getKey(), 0);
+                        queryBeforeContext.put(entry.getKey(), 0);
 //                        queryCurrentCount = queryBeforeContext;
                         //Reset the querywords before contextword counter, in case of repeated contextword matches
 //                        queryBeforeContext = 0;
-                        System.out.println("Found context word: " + nextWord + " count: " + queryBeforeContext);
+//                        System.out.println("Found context word: " + nextWord + " count: " + queryBeforeContext);
                     }
 
                     //We have an instance of the queryword, and we have detected the contextword
                     else if (entry.getValue().equals(nextWord) && contextWordDetected.get(entry.getKey())) {
                         queryCurrentCount = queryCurrentCount + 1;
-                        System.out.println("Found both context & query word: " + nextWord + " count: " +
-                                queryCurrentCount);
+//                        System.out.println("Found both context & query word: " + nextWord + " count: " +
+//                                queryCurrentCount);
                     }
 
                     //We need to keep track of any querywords that appear before the contextword. If the contextword is
@@ -79,17 +79,21 @@ public class WordCount {
 //                        queryBeforeContext = queryBeforeContext + 1;
 //                        queryCurrentCount += queryBeforeContext;
 
-                        System.out.println("found query word before context " + nextWord + " count: " +
-                                queryBeforeContext);
+//                        System.out.println("found query word before context " + nextWord + " count: " +
+//                                queryBeforeContext);
                     }
+
+
 
                     if(contextWordDetected.get(entry.getKey())){
                         one.set(queryCurrentCount);
-                        word.set(entry.getKey() + " " + entry.getValue());
-//                    word.set(nextWord);
-                        output.collect(word, one);
-
                     }
+                    else
+                        one.set(0);
+
+                    word.set(entry.getKey() + " " + entry.getValue());
+//                    word.set(nextWord);
+                    output.collect(word, one);
 
 
                     queryCurrentCount = 0;
