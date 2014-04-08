@@ -45,11 +45,44 @@ public class WordCount {
                 queryWordIterator = queryWordSet.iterator();
                 String nextWord = tokenizer.nextToken();
                 while(queryWordIterator.hasNext()){
-                    System.out.println(queryWordIterator.next());
-                }
+                    Entry<String,String> entry = (Entry<String,String>)queryWordIterator.next();
+                    System.out.println("token " + nextWord + " entry key " + entry.getKey() + " " + entry.getValue() );
 
-                word.set(nextWord);
-                output.collect(word, one);
+                    if (entry.getKey().equals(nextWord)) {
+                        contextWordDetected = true;
+                        queryCurrentCount = queryBeforeContext;
+                        //Reset the querywords before contextword counter, in case of repeated contextword matches
+                        queryBeforeContext = 0;
+                        System.out.println("Found context word: " + nextWord + " count: " + queryBeforeContext);
+                    }
+
+                    //We have an instance of the queryword, and we have detected the contextword
+                    else if (entry.getValue().equals(nextWord) && contextWordDetected) {
+                        queryCurrentCount = queryCurrentCount + 1;
+                        System.out.println("Found both context & query word: " + nextWord + " count: " +
+                                queryCurrentCount);
+                    }
+
+                    //We need to keep track of any querywords that appear before the contextword. If the contextword is
+                    //found sometime later, we should still have an accurate count of how many times the queryword
+                    //appeared in this line.
+                    else if (entry.getValue().equals(nextWord) && (contextWordDetected == false)) {
+                        queryBeforeContext = queryBeforeContext + 1;
+                        System.out.println("found query word before context " + nextWord + " count: " +
+                                queryBeforeContext);
+                    }
+                    one.set(queryCurrentCount);
+                    word.set(entry.getKey() + " " + entry.getValue());
+
+//                    word.set(nextWord);
+                    output.collect(word, one);
+
+                    queryBeforeContext = 0;
+                    queryCurrentCount = 0;
+
+                }
+                contextWordDetected = false;
+
             }
         }
     }
